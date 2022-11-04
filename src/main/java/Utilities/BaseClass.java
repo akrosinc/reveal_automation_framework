@@ -15,6 +15,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author Yonela Ntlokwana: BaseClass is used to load the config file and Initialize
@@ -49,6 +50,7 @@ public class BaseClass {
         getDriver().manage().window().maximize();
         //Launching the URL
         getDriver().get(prop.getProperty("baseUrl"));
+        getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         return getDriver();
     }
     //Loading a config file

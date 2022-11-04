@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Reveal_Android_Framework/Reveal_Android_Framework.iml" filepath="$PROJECT_DIR$/Reveal_Android_Framework/Reveal_Android_Framework.iml" />
       <module fileurl="file://$PROJECT_DIR$/Reveal_AutomationFramework.iml" filepath="$PROJECT_DIR$/Reveal_AutomationFramework.iml" />
     </modules>
   </component>

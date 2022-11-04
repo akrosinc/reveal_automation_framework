@@ -32,14 +32,15 @@ public class SignInPage extends BaseClass {
         //PageFactory.initElements(getDriver(),this);
     }
     public void clickLogInBtn() throws Throwable{
-       // action.click(getDriver(),homeLogInBtn);
-        homeLogInBtn.click();
+        action.explicitWait(getDriver(),homeLogInBtn,40);
+        action.click(getDriver(),homeLogInBtn);
     }
     public void signIn(String username,String password)
     {
         action.type(signIn_username,username);
         action.type(signIn_password,password);
         action.click(getDriver(),signInBtn);
+        action.explicitWait(getDriver(),signOutBtn,10);
     }
      public boolean isUserSignedIn()
      {

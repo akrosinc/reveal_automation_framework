@@ -9,14 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 import Utilities.BaseClass;
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -42,7 +35,6 @@ public  class Action extends BaseClass implements ActionInterface {
 
         Actions act = new Actions(driver);
         act.moveToElement(ele).click().build().perform();
-
     }
 
     @Override
@@ -275,7 +267,7 @@ public  class Action extends BaseClass implements ActionInterface {
     public boolean JSClick(WebDriver driver, WebElement ele) {
         boolean flag = false;
         try {
-            // WebElement element = driver.findElement(locator);
+             //WebElement element = driver.findElement(locator);
             JavascriptExecutor executor = (JavascriptExecutor) driver;
             executor.executeScript("arguments[0].click();", ele);
             // driver.executeAsyncScript("arguments[0].click();", element);
@@ -733,7 +725,7 @@ public  class Action extends BaseClass implements ActionInterface {
     }
     @Override
     public void implicitWait(WebDriver driver, int timeOut) {
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
     }
     @Override
     public void explicitWait(WebDriver driver, WebElement element, int timeOut ) {
@@ -766,5 +758,9 @@ public  class Action extends BaseClass implements ActionInterface {
         String currentDate = new SimpleDateFormat("yyyy-MM-dd-hhmmss").format(new Date());
         return currentDate;
     }
-
+    public void SelectDropDown(WebElement el){
+        Actions keyDown = new Actions(getDriver());
+        el.click();
+        keyDown.sendKeys(Keys.chord(Keys.ARROW_DOWN,Keys.ENTER, Keys.TAB)).perform();
+    }
 }
