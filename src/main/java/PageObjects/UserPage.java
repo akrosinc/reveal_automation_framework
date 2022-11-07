@@ -32,7 +32,7 @@ public class UserPage extends BaseClass{
     @FindBy(how = How.ID, using ="save-button")
     WebElement organization_save_btn;
 
-    @FindBy(how = How.XPATH, using ="//*[@id=\"management-tab-tabpane-organization\"]//tr[1]/td[2] ")
+    @FindBy(how = How.XPATH, using ="//*[text()='QA Testing']")
     WebElement organization_created;
     @FindBy(how = How.ID, using ="management-button")
     WebElement user_management_btn;
@@ -42,12 +42,14 @@ public class UserPage extends BaseClass{
 
     @FindBy(how = How.ID, using ="edit-button")
     WebElement edit_org_details;
+    @FindBy(how = How.ID, using ="active-organization-switch")
+    WebElement active_organization_switch;
+
     @FindBy(how = How.ID, using ="expanderclick-handler")
     WebElement expand_org_name;
 
     @FindBy(how = How.ID, using ="nameclick-handler")
     WebElement org_name;
-
     @FindBy(how = How.ID, using ="management-tab-tab-user")
     WebElement user_tab;
     @FindBy(how = How.ID, using ="create-user-button")
@@ -88,7 +90,7 @@ public class UserPage extends BaseClass{
     public void enterOrganisationDetails(String org_name){
         action.type(organization_name_input,org_name);
         action.SelectDropDown(organization_type);
-        action.SelectDropDown(organization_part_of_select);
+       // action.SelectDropDown(organization_part_of_select);
         action.click(getDriver(),organization_save_btn);
     }
     public void enterOrganisationDetailsWithOutTpe(String org_name){
@@ -108,6 +110,13 @@ public class UserPage extends BaseClass{
         action.type(last_name_input,"user");
         action.type(password_input,prop.getProperty("password"));
         action.click(getDriver(),user_submit_btn);
+    }
+    public void toggleInactive(){
+        action.click(getDriver(),active_organization_switch);
+    }
+    public void clickSaveOrganisation(){
+        action.click(getDriver(),organization_save_btn);
+        getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
     public boolean checkOrganisationCreated(){
       if(!organization_created.getText().contains("Testing team")) {
@@ -131,14 +140,18 @@ public class UserPage extends BaseClass{
         action.click(getDriver(),edit_org_details);
     }
     public void openOrganisationDetails(String org_name){
-        if(!organization_created.getText().contains(org_name)) {
-            expand_org_name.click();
+        if(organization_created.getText().contains(org_name)) {
             organization_created.click();
         }else {
+            clickCreateOrganizationBtn();
+            enterOrganisationDetails(org_name);
             organization_created.click();
         }
     }
     public boolean isOrgDetailsChanged(String org_name){
       return   organization_created.getText().contains(org_name);
+    }
+    public boolean isOrganisationActive(){
+        return   !active_organization_switch.isSelected();
     }
 }

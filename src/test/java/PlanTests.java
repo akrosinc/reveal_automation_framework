@@ -16,9 +16,8 @@ public class PlanTests extends BaseClass {
         login.signIn(prop.getProperty("username"),prop.getProperty("password"));
         plan.clickPlanManagementBtn();
         plan.clickCreatePlanBtn();
-        plan.enterPlanDetails();
-        plan.submitPlan();
-        plan.confirmSubmittedPlan();
+        plan.enterPlanDetails("testing qa edited");
+        plan.clickPlanUpdateBtn();
         Assert.assertTrue(plan.isPlanOnTheTable(), "plan created not found in the table");
     }
     //Create plan with goals
@@ -30,7 +29,7 @@ public class PlanTests extends BaseClass {
         login.signIn(prop.getProperty("username"),prop.getProperty("password"));
         plan.clickPlanManagementBtn();
         plan.clickCreatePlanBtn();
-        plan.enterPlanDetails();
+        plan.enterPlanDetails("testing qa");
         plan.clickGoalTab();
         plan.clickAddGoals();
         plan.createGoals("Drug treatment");
@@ -90,6 +89,19 @@ public class PlanTests extends BaseClass {
     }
     @Test()//update plan tile
     public void updatePlanTitleTest() throws Throwable {
+        PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
+        SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
+        login.clickLogInBtn();
+        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        plan.clickPlanManagementBtn();
+        plan.openPlan();
+        plan.editPlanTitle("edited testing title");
+        plan.clickPlanUpdateBtn();
+        plan.clickPlanBackBtn();
+        Assert.assertTrue(plan.isGPlanTitleEdited("edited testing title"),"plan title not successfully created");;
+    }
+    @Test()//update plan details
+    public void updatePlanTest() throws Throwable {
         PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         login.clickLogInBtn();

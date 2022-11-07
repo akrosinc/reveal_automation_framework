@@ -16,7 +16,7 @@ public class UserTests extends BaseClass {
         login.signIn(prop.getProperty("username"),prop.getProperty("password"));
         userPage.clickUserManagementBtn();
         userPage.clickCreateOrganizationBtn();
-        userPage.enterOrganisationDetails("Testing Team");
+        userPage.enterOrganisationDetails("QA Testing");
         Assert.assertTrue(userPage.checkOrganisationCreated(), "organisation created not found in the table");
     }
     @Test() //Enter organisation without a type field.
@@ -89,5 +89,20 @@ public class UserTests extends BaseClass {
         userPage.clickCreateUserBtn();
         userPage.createUserWithOutPassword();
         Assert.assertTrue(userPage.checkUserPasswordError(), "missing password error not displayed");
+    }
+
+    @Test()//Toggle organisation to inactive state
+    public void InactiveOrganisationTest() throws Throwable {
+        SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
+        UserPage userPage = PageFactory.initElements(getDriver(), UserPage.class);
+        login.clickLogInBtn();
+        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        userPage.clickUserManagementBtn();
+        userPage.openOrganisationDetails("QA Testing");
+        userPage.clickOrgEditBtn();
+        userPage.toggleInactive();
+        userPage.clickSaveOrganisation();
+        userPage.openOrganisationDetails("QA Testing");
+        Assert.assertTrue(userPage.isOrganisationActive(), "organisation is active");
     }
 }

@@ -42,7 +42,7 @@ public class PlanPage extends BaseClass {
     @FindBy(how = How.ID, using ="dialog-confirm")
     WebElement confirm_submitted_plan;
 
-    @FindBy(how = How.XPATH, using ="//*[@id=\"root\"]/div[1]//tbody/tr[2]/td[1]")
+    @FindBy(how = How.XPATH, using ="//*[text()='testing qa']")
     WebElement confirm_plan_on_table;
 
     @FindBy(how = How.ID, using ="plans-tab-create-goals")
@@ -144,10 +144,10 @@ public class PlanPage extends BaseClass {
         action.click(getDriver(),plan_management_btn);
         //action.explicitWait(getDriver(),plan_table,40);
     }
-    public void enterPlanDetails() {
+    public void enterPlanDetails(String plan_name) {
         Actions keyDown = new Actions(driver);
         getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        action.type(plan_title_input,"yonela testing qa");
+        action.type(plan_title_input,plan_name);
         getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         action.type(start_date_picker,getCurrentDate());
         getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
