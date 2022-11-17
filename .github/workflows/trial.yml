@@ -12,11 +12,11 @@ on: [push]
 
 jobs:
 
-  build:
+build:
 
-    runs-on: ubuntu-latest
+     runs-on: ubuntu-latest
 
-    steps:
+     steps:
 
     - uses: actions/checkout@v2
 
@@ -28,9 +28,21 @@ jobs:
 
         java-version: 1.8
 
+        server-id: github 
+
+        settings-path: ${{ github.workspace }} 
+
+    - name: Install Google Chrome 
+
+      run: |
+
+              chmod +x ./scripts/InstallChrome.sh
+
+                          ./scripts/InstallChrome.sh 
+
     - name: Build with Maven
 
-      run: mvn -B package --file pom.xml
+      run: mvn -B package --file pom.xml test
 
   test_1:
 
