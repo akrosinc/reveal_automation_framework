@@ -107,13 +107,13 @@
     <orderEntry type="library" name="Maven: org.freemarker:freemarker:2.3.30" level="project" />
     <orderEntry type="library" name="Maven: io.github.sukgu:automation:0.1.4.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.18.24" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven.plugins:maven-surefire-plugin:2.22.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven.surefire:maven-surefire-common:2.22.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven.plugins:maven-surefire-plugin:2.22.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven.surefire:maven-surefire-common:2.22.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.maven:maven-plugin-api:2.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.maven.plugin-tools:maven-plugin-annotations:3.5.2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven.surefire:surefire-api:2.22.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven.surefire:surefire-logger-api:2.22.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven.surefire:surefire-booter:2.22.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven.surefire:surefire-api:2.22.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven.surefire:surefire-logger-api:2.22.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven.surefire:surefire-booter:2.22.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.maven:maven-artifact:2.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-utils:1.5.15" level="project" />
     <orderEntry type="library" name="Maven: org.apache.maven:maven-plugin-descriptor:2.2.1" level="project" />
