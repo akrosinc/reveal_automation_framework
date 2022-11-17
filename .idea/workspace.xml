@@ -5,21 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa20c4e5-86be-45f2-a8f0-449935c10242" name="Changes" comment="wip">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_sukgu_automation_0_1_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ActionDriver/Action.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ActionDriver/ActionInterface.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reveal_AutomationFramework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Reveal_AutomationFramework.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ActionDriver/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ActionDriver/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/LocationManagementPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/LocationManagementPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/PlanPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/PlanPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/UserPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/UserPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LocationManagementTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LocationManagementTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PlanTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlanTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reveal_Android_Framework/Reveal_Android_Framework.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reveal_Android_Framework/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reveal_AutomationFramework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Reveal_Automation_Framework.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +26,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -58,20 +48,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDK Location&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;gradle.compiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.097751714",
+    "project.structure.side.proportion": "0.29144096",
+    "settings.editor.selected.configurable": "gradle.compiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ActionDriver" />
@@ -85,8 +75,21 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG.PlanTests.deleteGoalsActionTest">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Reveal_Automation_Framework" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Reveal_Automation_Framework" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PlanTests.ChangeInterventionTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Reveal_AutomationFramework" />
+      <module name="Reveal_Automation_Framework" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PlanTests" />
       <option name="METHOD_NAME" value="ChangeInterventionTest" />
@@ -98,7 +101,7 @@
       </method>
     </configuration>
     <configuration name="PlanTests.activatePlanTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Reveal_AutomationFramework" />
+      <module name="Reveal_Automation_Framework" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PlanTests" />
       <option name="METHOD_NAME" value="activatePlanTest" />
@@ -110,7 +113,7 @@
       </method>
     </configuration>
     <configuration name="PlanTests.assignmentTeamToLocationTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Reveal_AutomationFramework" />
+      <module name="Reveal_Automation_Framework" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PlanTests" />
       <option name="METHOD_NAME" value="assignmentTeamToLocationTest" />
@@ -122,7 +125,7 @@
       </method>
     </configuration>
     <configuration name="PlanTests.deleteGoalsActionTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Reveal_AutomationFramework" />
+      <module name="Reveal_Automation_Framework" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PlanTests" />
       <option name="METHOD_NAME" value="deleteGoalsActionTest" />
@@ -134,7 +137,7 @@
       </method>
     </configuration>
     <configuration name="PlanTests.planLocationAssignmentTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Reveal_AutomationFramework" />
+      <module name="Reveal_Automation_Framework" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PlanTests" />
       <option name="METHOD_NAME" value="planLocationAssignmentTest" />
@@ -178,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667833327362</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="wip">
+      <created>1668677735449</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668677735449</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

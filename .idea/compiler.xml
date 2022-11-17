@@ -7,11 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Reveal_AutomationFramework" />
+        <module name="Reveal_Automation_Framework" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Reveal_AutomationFramework" target="17" />
+      <module name="Reveal_Automation_Framework" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
