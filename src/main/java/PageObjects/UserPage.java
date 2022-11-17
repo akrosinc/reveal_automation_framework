@@ -1,10 +1,7 @@
 package PageObjects;
 import ActionDriver.Action;
 import Utilities.BaseClass;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -48,8 +45,10 @@ public class UserPage extends BaseClass{
     @FindBy(how = How.ID, using ="expanderclick-handler")
     WebElement expand_org_name;
 
-    @FindBy(how = How.ID, using ="nameclick-handler")
-    WebElement org_name;
+    @FindBy(how = How.ID, using ="delete-button")
+    WebElement delete_org_btn;
+    @FindBy(how = How.XPATH, using ="//*[contains(text(),'Confirm')]")
+    WebElement confirm_delete_org;
     @FindBy(how = How.ID, using ="management-tab-tab-user")
     WebElement user_tab;
     @FindBy(how = How.ID, using ="create-user-button")
@@ -73,24 +72,42 @@ public class UserPage extends BaseClass{
     WebElement password_missing_error;
     @FindBy(how = How.XPATH, using ="//*[contains(text(),'qa.automation.user')]")
     WebElement created_user_on_table;
+    @FindBy(how = How.XPATH, using ="//*[contains(text(),'First name must not be empty.')]")
+    WebElement first_name_empty_error;
+    @FindBy(how = How.XPATH, using ="//*[contains(text(),'Last name must not be empty.')]")
+    WebElement last_name_empty_error;
+    @FindBy(how = How.XPATH, using ="//*[contains(text(),' deleted successfully')]")
+    WebElement org_deleted_toast;
+    @FindBy(how = How.XPATH, using ="//*[contains(text(),'qa.automation.user')]")
+    WebElement existing_user;
+    @FindBy(how = How.XPATH, using ="//*[contains(text(),' updated successfully.')]")
+    WebElement user_updated_toast;
     @FindBy(how = How.ID, using ="submit-button")
     WebElement user_submit_btn;
     public UserPage(WebDriver driver){
         this.driver = driver;
     }
     public void clickCreateOrganizationBtn(){
-        action.click(getDriver(),organization_create_btn);
+        getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        action.JSClick(getDriver(),organization_create_btn);
     }
     public void clickCreateUserBtn(){
         action.click(getDriver(),create_user_btn);
     }
     public void clickUserTab(){
-        action.click(getDriver(),user_tab);
+        getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        action.JSClick(getDriver(),user_tab);
     }
     public void enterOrganisationDetails(String org_name){
         action.type(organization_name_input,org_name);
         action.SelectDropDown(organization_type);
        // action.SelectDropDown(organization_part_of_select);
+        action.click(getDriver(),organization_save_btn);
+    }
+    public void enterChildOrganisationDetails(String org_name){
+        action.type(organization_name_input,org_name);
+        action.SelectDropDown(organization_type);
+        action.SelectDropDown(organization_part_of_select);
         action.click(getDriver(),organization_save_btn);
     }
     public void enterOrganisationDetailsWithOutTpe(String org_name){
@@ -104,15 +121,28 @@ public class UserPage extends BaseClass{
         action.type(last_name_input,"user");
         action.click(getDriver(),user_submit_btn);
     }
-    public void createUser(){
+    public void createUser(String fname, String lname){
         action.type(username_input,"qa.automation.user");
-        action.type(first_name_input,"automation");
-        action.type(last_name_input,"user");
+        action.type(first_name_input,fname);
+        action.type(last_name_input,lname);
         action.type(password_input,prop.getProperty("password"));
         action.click(getDriver(),user_submit_btn);
     }
+    public void editUser(String fname, String lname){
+        action.type(username_input,"automation.user");
+        action.type(first_name_input,fname);
+        action.type(last_name_input,lname);
+        action.type(password_input,prop.getProperty("password"));
+        action.JSClick(getDriver(),organization_save_btn);
+    }
     public void toggleInactive(){
         action.click(getDriver(),active_organization_switch);
+    }
+    public void clickDeleteBtn(){
+        action.JSClick(getDriver(),delete_org_btn);
+    }
+    public void clickConfirmDeleteBtn(){
+        action.JSClick(getDriver(),confirm_delete_org);
     }
     public void clickSaveOrganisation(){
         action.click(getDriver(),organization_save_btn);
@@ -124,8 +154,50 @@ public class UserPage extends BaseClass{
       }
       return organization_created.isDisplayed();
     }
+
+    public void clickUserManagementBtn(){
+        action.JSClick(getDriver(),user_management_btn);
+    }
+    public void expandUserDetails(String username){
+        boolean flag_user_name = false;
+        try {
+            flag_user_name =existing_user.getText().contains(username);
+        }catch(NotFoundException e){
+            e.getStackTrace();
+        }
+        if (!flag_user_name) {
+            clickCreateUserBtn();
+            createUser("qa", "automation");
+            action.JSClick(getDriver(),existing_user);
+
+        } else {
+            action.JSClick(getDriver(),existing_user);
+        }
+    }
+    public void clickOrgEditBtn(){
+        action.click(getDriver(),edit_org_details);
+    }
+    public void openOrganisationDetails(String org_name){
+        boolean flag_org_name = false;
+        try {
+            flag_org_name =organization_created.getText().contains(org_name);
+        }catch(NotFoundException e){
+            e.getStackTrace();
+        }
+        if (!flag_org_name) {
+            clickCreateOrganizationBtn();
+            enterOrganisationDetails(org_name);
+            organization_created.click();
+
+        } else {
+            organization_created.click();
+        }
+    }
     public boolean checkOrganisationTypeError(){
         return org_type_error.isDisplayed();
+    }
+    public boolean isUserEmptyNamesErrorDisplayed(){
+        return first_name_empty_error.isDisplayed() && last_name_empty_error.isDisplayed();
     }
     public boolean checkUserPasswordError(){
         return password_missing_error.isDisplayed();
@@ -133,25 +205,16 @@ public class UserPage extends BaseClass{
     public boolean checkUserCreatedDisplayed(){
         return created_user_on_table.isDisplayed();
     }
-    public void clickUserManagementBtn(){
-        action.JSClick(getDriver(),user_management_btn);
-    }
-    public void clickOrgEditBtn(){
-        action.click(getDriver(),edit_org_details);
-    }
-    public void openOrganisationDetails(String org_name){
-        if(organization_created.getText().contains(org_name)) {
-            organization_created.click();
-        }else {
-            clickCreateOrganizationBtn();
-            enterOrganisationDetails(org_name);
-            organization_created.click();
-        }
+    public boolean checkUserUpdatedDisplayed(){
+        return user_updated_toast.isDisplayed();
     }
     public boolean isOrgDetailsChanged(String org_name){
       return   organization_created.getText().contains(org_name);
     }
     public boolean isOrganisationActive(){
         return   !active_organization_switch.isSelected();
+    }
+    public boolean isOrganisationSuccessfullyDeleted(){
+        return   org_deleted_toast.isDisplayed();
     }
 }

@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class UserTests extends BaseClass {
-
+   public  String org_name ="QA Testing";
     @Test()
     public void createOrganisationTest() throws Throwable {
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
@@ -16,7 +16,18 @@ public class UserTests extends BaseClass {
         login.signIn(prop.getProperty("username"),prop.getProperty("password"));
         userPage.clickUserManagementBtn();
         userPage.clickCreateOrganizationBtn();
-        userPage.enterOrganisationDetails("QA Testing");
+        userPage.enterOrganisationDetails(org_name);
+        Assert.assertTrue(userPage.checkOrganisationCreated(), "organisation created not found in the table");
+    }
+    @Test()
+    public void createChildOrganisationTest() throws Throwable {
+        SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
+        UserPage userPage = PageFactory.initElements(getDriver(), UserPage.class);
+        login.clickLogInBtn();
+        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        userPage.clickUserManagementBtn();
+        userPage.clickCreateOrganizationBtn();
+        userPage.enterChildOrganisationDetails(org_name);
         Assert.assertTrue(userPage.checkOrganisationCreated(), "organisation created not found in the table");
     }
     @Test() //Enter organisation without a type field.
@@ -27,7 +38,7 @@ public class UserTests extends BaseClass {
         login.signIn(prop.getProperty("username"),prop.getProperty("password"));
         userPage.clickUserManagementBtn();
         userPage.clickCreateOrganizationBtn();
-        userPage.enterOrganisationDetailsWithOutTpe("Testing qa team");
+        userPage.enterOrganisationDetailsWithOutTpe(org_name);
         Assert.assertTrue(userPage.checkOrganisationTypeError(), "organisation created not found in the table");
     }
     @Test() //Enter organisation without a type field.
@@ -38,7 +49,7 @@ public class UserTests extends BaseClass {
         login.signIn(prop.getProperty("username"),prop.getProperty("password"));
         userPage.clickUserManagementBtn();
         userPage.clickCreateOrganizationBtn();
-        userPage.enterOrganisationDetailsWithOutTpe("Testing qa team");
+        userPage.enterOrganisationDetailsWithOutTpe(org_name);
         Assert.assertTrue(userPage.checkOrganisationTypeError(), "organisation created not found in the table");
     }
     @Test()//edit organisation details
@@ -48,10 +59,23 @@ public class UserTests extends BaseClass {
         login.clickLogInBtn();
         login.signIn(prop.getProperty("username"),prop.getProperty("password"));
         userPage.clickUserManagementBtn();
-        userPage.openOrganisationDetails("Testing team");
+        userPage.openOrganisationDetails(org_name);
         userPage.clickOrgEditBtn();
         userPage.enterOrganisationDetails("qa testing team");
         Assert.assertTrue(userPage.isOrgDetailsChanged("qa testing team"), "organisation not edited in the table");
+    }
+    @Test()//edit user details
+    public void editUserDetailsTest() throws Throwable {
+        SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
+        UserPage userPage = PageFactory.initElements(getDriver(), UserPage.class);
+        login.clickLogInBtn();
+        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        userPage.clickUserManagementBtn();
+        userPage.clickUserTab();
+        userPage.expandUserDetails("qa.automation.user");
+        userPage.clickOrgEditBtn();
+        userPage.editUser("Yonela","tester");
+        Assert.assertTrue(userPage.checkUserUpdatedDisplayed(), "user not edited in the table");
     }
 
     @Test()//Delete organisation
@@ -61,10 +85,23 @@ public class UserTests extends BaseClass {
         login.clickLogInBtn();
         login.signIn(prop.getProperty("username"),prop.getProperty("password"));
         userPage.clickUserManagementBtn();
-        userPage.openOrganisationDetails("Testing team");
-        userPage.clickOrgEditBtn();
-        userPage.enterOrganisationDetails("qa testing team");
-        Assert.assertTrue(userPage.isOrgDetailsChanged("qa testing team"), "organisation not edited in the table");
+        userPage.openOrganisationDetails(org_name);
+        userPage.clickDeleteBtn();
+        userPage.clickConfirmDeleteBtn();
+        Assert.assertTrue(userPage.isOrganisationSuccessfullyDeleted(), "organisation not deleted in the table");
+    }
+    @Test()//Delete organisation
+    public void deleteUserTest() throws Throwable {
+        SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
+        UserPage userPage = PageFactory.initElements(getDriver(), UserPage.class);
+        login.clickLogInBtn();
+        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        userPage.clickUserManagementBtn();
+        userPage.clickUserTab();
+        userPage.expandUserDetails("qa.automation.user");
+        userPage.clickDeleteBtn();
+        userPage.clickConfirmDeleteBtn();
+        Assert.assertTrue(userPage.isOrganisationSuccessfullyDeleted(), "user not deleted in the table");
     }
     @Test()//Delete organisation
     public void createUserTest() throws Throwable {
@@ -75,8 +112,20 @@ public class UserTests extends BaseClass {
         userPage.clickUserManagementBtn();
         userPage.clickUserTab();
         userPage.clickCreateUserBtn();
-        userPage.createUser();
+        userPage.createUser("automation","user");
         Assert.assertTrue(userPage.checkUserCreatedDisplayed(), "user created not displayed");
+    }
+    @Test()//Delete organisation
+    public void createUserWithoutNamesTest() throws Throwable {
+        SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
+        UserPage userPage = PageFactory.initElements(getDriver(), UserPage.class);
+        login.clickLogInBtn();
+        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        userPage.clickUserManagementBtn();
+        userPage.clickUserTab();
+        userPage.clickCreateUserBtn();
+        userPage.createUser("","");
+        Assert.assertTrue(userPage.isUserEmptyNamesErrorDisplayed(), "user with empty names warning message not displayed");
     }
     @Test()//Delete organisation
     public void createUserWithoutPasswordTest() throws Throwable {

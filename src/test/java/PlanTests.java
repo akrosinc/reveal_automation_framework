@@ -5,10 +5,13 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import static PageObjects.PlanPage.activePlanTitle;
+
 
 public class PlanTests extends BaseClass {
-    //Create plan without goals
-    @Test()
+   private  String plan_name = "testing qa";
+    private  String goal_description = "Drug treatment";
+    @Test() //Create plan without goals
     public void createPlanTest() throws Throwable {
         PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
@@ -16,7 +19,7 @@ public class PlanTests extends BaseClass {
         login.signIn(prop.getProperty("username"),prop.getProperty("password"));
         plan.clickPlanManagementBtn();
         plan.clickCreatePlanBtn();
-        plan.enterPlanDetails("testing qa edited");
+        plan.enterPlanDetails(plan_name);
         plan.clickPlanUpdateBtn();
         Assert.assertTrue(plan.isPlanOnTheTable(), "plan created not found in the table");
     }
@@ -29,10 +32,10 @@ public class PlanTests extends BaseClass {
         login.signIn(prop.getProperty("username"),prop.getProperty("password"));
         plan.clickPlanManagementBtn();
         plan.clickCreatePlanBtn();
-        plan.enterPlanDetails("testing qa");
+        plan.enterPlanDetails(plan_name);
         plan.clickGoalTab();
         plan.clickAddGoals();
-        plan.createGoals("Drug treatment");
+        plan.createGoals(goal_description);
         Assert.assertTrue(plan.isGoalCreated(), "goal not created");
         plan.submitPlan();
     }
@@ -47,10 +50,10 @@ public class PlanTests extends BaseClass {
         plan.openPlan();
         plan.clickGoalTab();
         plan.clickAddGoals();
-        plan.createGoals("Drug_treatment");
+        plan.createGoals(goal_description);
         plan.expandGoals();
         plan.clickEditGoalButton();
-        plan.createGoals(" edit");
+        plan.createGoals("edit drug treatment");
         Assert.assertTrue(plan.isGoalEdited(),"goal not edited");;
     }
     //Edit plan goals
@@ -64,7 +67,7 @@ public class PlanTests extends BaseClass {
         plan.openPlan();
         plan.clickGoalTab();
         plan.clickAddGoals();
-        plan.createGoals("Drug_treatment");
+        plan.createGoals(goal_description);
         plan.expandGoals();
         plan.clickCreateActionsBtn();
         plan.CreateActions();
@@ -80,11 +83,9 @@ public class PlanTests extends BaseClass {
         plan.clickPlanManagementBtn();
         plan.openPlan();
         plan.clickGoalTab();
-        plan.clickAddGoals();
-        plan.createGoals("Drug_treatment");
         plan.expandGoals();
         plan.deleteGoalBtn();
-        plan.confirmDeleteGoalBtn();
+        plan.confirmBtn();
         Assert.assertTrue(plan.isGoalDeleted(),"goal not deleted");;
     }
     @Test()//update plan tile
@@ -108,9 +109,60 @@ public class PlanTests extends BaseClass {
         login.signIn(prop.getProperty("username"),prop.getProperty("password"));
         plan.clickPlanManagementBtn();
         plan.openPlan();
-        plan.editPlanTitle("edited testing title");
-        plan.clickPlanUpdateBtn();
-        plan.clickPlanBackBtn();
-        Assert.assertTrue(plan.isGPlanTitleEdited("edited testing title"),"plan title not successfully created");;
+        plan.updatePlanDetails(plan_name);
+        Assert.assertTrue(plan.isPlanUpdated("Plan updated successfully."),"plan not successfully updated");;
+    }
+    @Test()//Activate plan
+    public void activatePlanTest() throws Throwable {
+        PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
+        SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
+        login.clickLogInBtn();
+        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        plan.clickPlanManagementBtn();
+        plan.clickCreatePlanBtn();
+        plan.enterPlanDetails(activePlanTitle);
+        plan.submitPlan();
+        plan.confirmBtn();
+        plan.clickActivatePlanBtn();
+        plan.submitActivatePlan();
+        Assert.assertTrue(plan.isPlanActivated(),"plan not successfully activated");;
+    }
+    @Test()//Change intervention type
+    public void ChangeInterventionTest() throws Throwable {
+        PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
+        SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
+        login.clickLogInBtn();
+        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        plan.clickPlanManagementBtn();
+        plan.openPlan();
+        boolean type = plan.changeInterventionType();
+        Assert.assertTrue(plan.changeInterventionType(),"plan not successfully activated");;
+    }
+    @Test()//assign a plan to a location
+    public void planLocationAssignmentTest() throws Throwable {
+        PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
+        SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
+        login.clickLogInBtn();
+        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        plan.clickPlanAssignmentBtn();
+        plan.openPlan();
+        plan.clickAssignLocationTab();
+        plan.selectLocationAssign();
+        plan.saveLocationAssignment();
+        Assert.assertTrue(plan.isLocationAssignedToPlan(),"Location not assigned to plan successfully");;
+    }
+    @Test()//assign a plan to a location
+    public void assignmentTeamToLocationTest() throws Throwable {
+        PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
+        SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
+        login.clickLogInBtn();
+        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        plan.clickPlanAssignmentBtn();
+        plan.openPlan();
+        plan.clickAssignTeamTab();
+        plan.selectTeam();
+        plan.selectLocationsAssignment();
+        plan.saveLocationAssignment();
+        Assert.assertTrue(plan.isTeamAssignedToLocation(),"Team not assigned to location successfully");;
     }
 }

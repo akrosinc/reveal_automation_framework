@@ -4,6 +4,7 @@ import ExtentReport.ExtentManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -38,6 +39,9 @@ public class BaseClass {
         String browserName = prop.getProperty("browser");
       if(browserName.contains("Chrome")){
           WebDriverManager.chromedriver().setup();
+          ChromeOptions options = new ChromeOptions();
+          options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors",
+                  "--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
           driver.set(new ChromeDriver());
       }else if(browserName.contains("FireFox")){
           WebDriverManager.firefoxdriver().setup();

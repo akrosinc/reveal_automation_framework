@@ -2,6 +2,8 @@ package ActionDriver;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
@@ -762,5 +764,25 @@ public  class Action extends BaseClass implements ActionInterface {
         Actions keyDown = new Actions(getDriver());
         el.click();
         keyDown.sendKeys(Keys.chord(Keys.ARROW_DOWN,Keys.ENTER, Keys.TAB)).perform();
+    }
+    public void doubleSelectDropDown(WebElement el){
+        Actions keyDown = new Actions(getDriver());
+        el.click();
+        keyDown.sendKeys(Keys.chord(Keys.ARROW_DOWN,Keys.ARROW_DOWN,Keys.ENTER, Keys.TAB)).perform();
+    }
+    public void datePicker(WebElement el){
+        type(el,getCurrentDate());
+        el.sendKeys(Keys.ENTER);
+    }
+    public void clearWebField(WebElement element){
+        if (element.getText() != null || !element.getText().isEmpty()) {
+            element.sendKeys(Keys.chord(Keys.CLEAR));
+        }
+    }
+    public String getCurrentDate(){
+        LocalDate dateObj = LocalDate.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        String date = dateObj.format(formatter);
+        return date;
     }
 }
