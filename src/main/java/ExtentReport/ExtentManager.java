@@ -5,6 +5,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 
 import java.io.IOException;
 
@@ -19,6 +20,7 @@ public class ExtentManager {
     public static ExtentReports extent;
     public static ExtentTest test;
 
+    @BeforeMethod
     public static void setExtent(){
 
         spark= new ExtentSparkReporter(System.getProperty("user.dir")+"/test-output/ExtentReport/"+"MyReport_"+getCurrentTime1()+".html");
@@ -36,7 +38,7 @@ public class ExtentManager {
         extent.setSystemInfo("OS", "Win10");
         extent.setSystemInfo("Browser", prop.getProperty("browser"));
     }
-
+     @AfterTest
     public static void endReport() {
         extent.flush();
     }

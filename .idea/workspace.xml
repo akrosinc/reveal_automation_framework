@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa20c4e5-86be-45f2-a8f0-449935c10242" name="Changes" comment="wip">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_9_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_bonigarcia_webdrivermanager_5_3_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reveal_Automation_Framework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Reveal_Automation_Framework.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ExtentReport/ExtentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExtentReport/ExtentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/BaseClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668720749054</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="wip">
+      <created>1668721263073</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1668721263073</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
