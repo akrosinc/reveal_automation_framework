@@ -7,6 +7,9 @@
     <test verbose="2" preserve-order="true" name="C:/Users/yntlokwana/IdeaProjects/reveal_automation_framework">
         <classes>
             <class name="LogInPageTest" />
+            <class name="PlanTests" />
+            <class name="UserTests" />
+            <class name="LocationManagementTests" />
         </classes>
     </test>
 </suite>
