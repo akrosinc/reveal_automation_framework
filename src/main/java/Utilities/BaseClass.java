@@ -60,7 +60,7 @@ public class BaseClass  {
     }
 
     //Loading a config file
-    //@BeforeMethod
+    @BeforeMethod
     public static void loadConfig(){
             try{
                 prop = new Properties();

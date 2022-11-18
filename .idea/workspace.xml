@@ -9,10 +9,11 @@
       <change afterPath="$PROJECT_DIR$/ScreenShots/loginTest_20221118063238.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-31-18-063143.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-32-18-063235.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-54-18-075405.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-57-18-075748.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/SignInPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExtentReport/ExtentManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExtentReport/ExtentManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/SignInPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjects/SignInPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Utilities/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/BaseClass.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -330,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668788195126</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="fixing extent report test class on testng.xml">
+      <created>1668794462554</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1668794462554</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
