@@ -18,12 +18,13 @@ import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+
 /**
  * @author Yonela Ntlokwana: BaseClass is used to load the config file and Initialize
  * WebDriver
  *
  */
-public class BaseClass {
+public class BaseClass  {
 
     //public static WebDriver driver ;
     public static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
@@ -72,13 +73,13 @@ public class BaseClass {
             }
     }
     //Setting
-    @BeforeMethod()
+    @BeforeTest()
     public void setup() {
         launchApp();
         //ExtentManager.setExtent();
     }
    //closing a browser driver
-    @AfterMethod()
+    @AfterTest()
     public void tearDown() {
         getDriver().quit();
         //ExtentManager.endReport();

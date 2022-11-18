@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa20c4e5-86be-45f2-a8f0-449935c10242" name="Changes" comment="wip">
+    <list default="true" id="fa20c4e5-86be-45f2-a8f0-449935c10242" name="Changes" comment="fixing extent report">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ExtentReport/ExtentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExtentReport/ExtentManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/BaseClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -266,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668721263073</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fixing extent report">
+      <created>1668754619869</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1668754619869</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -285,7 +291,8 @@
     <MESSAGE value="remove unwanted module" />
     <MESSAGE value="editing maven.yml and pom.xml" />
     <MESSAGE value="wip" />
-    <option name="LAST_COMMIT_MESSAGE" value="wip" />
+    <MESSAGE value="fixing extent report" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing extent report" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
