@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa20c4e5-86be-45f2-a8f0-449935c10242" name="Changes" comment="adding more test class on testng.xml">
-      <change afterPath="$PROJECT_DIR$/profiles.xml" afterDir="false" />
+    <list default="true" id="fa20c4e5-86be-45f2-a8f0-449935c10242" name="Changes" comment="fixing extent report test class on testng.xml">
+      <change afterPath="$PROJECT_DIR$/ScreenShots/ChangeInterventionTest_20221118063330.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScreenShots/loginTest_20221118063238.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-31-18-063143.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-32-18-063235.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/SignInPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExtentReport/ExtentManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExtentReport/ExtentManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/BaseClass.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +45,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="autoscrollToSource" value="true" />
+  </component>
   <component name="ProjectId" id="2GIJfk2ObU3eIpaerFz8KqHt88x" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -60,7 +68,7 @@
     &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.097751714&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.29144096&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -75,36 +83,47 @@
       <recent name="C:\Users\yntlokwana\IdeaProjects\Reveal_AutomationFramework\src" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.PlanTests.deleteGoalsActionTest">
-    <configuration name="PlanTests.ChangeInterventionTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.LogInPageTest.loginTest">
+    <configuration name="C:/Users/yntlokwana/IdeaProjects/reveal_automation_framework/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Reveal_Automation_Framework" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PlanTests" />
-      <option name="METHOD_NAME" value="ChangeInterventionTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlanTests.activatePlanTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LogInPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Reveal_Automation_Framework" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PlanTests" />
-      <option name="METHOD_NAME" value="activatePlanTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="LogInPageTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlanTests.assignmentTeamToLocationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LogInPageTest.loginTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Reveal_Automation_Framework" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LogInPageTest" />
+      <option name="METHOD_NAME" value="loginTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="1" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogInPageTest.loginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Reveal_Automation_Framework" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PlanTests" />
-      <option name="METHOD_NAME" value="assignmentTeamToLocationTest" />
+      <option name="MAIN_CLASS_NAME" value="LogInPageTest" />
+      <option name="METHOD_NAME" value="loginTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -124,25 +143,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlanTests.planLocationAssignmentTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Reveal_Automation_Framework" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PlanTests" />
-      <option name="METHOD_NAME" value="planLocationAssignmentTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LogInPageTest.loginTest" />
+        <item itemvalue="TestNG.LogInPageTest" />
+        <item itemvalue="TestNG.LogInPageTest.loginTest (1)" />
+        <item itemvalue="TestNG.C:/Users/yntlokwana/IdeaProjects/reveal_automation_framework/testng.xml" />
         <item itemvalue="TestNG.PlanTests.deleteGoalsActionTest" />
-        <item itemvalue="TestNG.PlanTests.ChangeInterventionTest" />
-        <item itemvalue="TestNG.PlanTests.activatePlanTest" />
-        <item itemvalue="TestNG.PlanTests.assignmentTeamToLocationTest" />
-        <item itemvalue="TestNG.PlanTests.planLocationAssignmentTest" />
       </list>
     </recent_temporary>
   </component>
@@ -316,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668778974770</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="fixing extent report test class on testng.xml">
+      <created>1668788195126</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1668788195126</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -339,16 +353,12 @@
     <MESSAGE value="andding maven surefire plugin" />
     <MESSAGE value="fixing maven surefire plugin" />
     <MESSAGE value="adding more test class on testng.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding more test class on testng.xml" />
+    <MESSAGE value="fixing extent report test class on testng.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing extent report test class on testng.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/LogInPageTest.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PlanTests.java</url>
           <line>19</line>
@@ -513,6 +523,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/PageObjects/PlanPage.java</url>
           <line>294</line>
           <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/LogInPageTest.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="67" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

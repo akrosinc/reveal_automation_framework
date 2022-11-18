@@ -36,7 +36,7 @@ public class BaseClass  {
     }
     //Launching a browser  and sending an url
     public static  WebDriver launchApp(){
-
+        loadConfig();
         String browserName = prop.getProperty("browser");
       if(browserName.contains("Chrome")){
           WebDriverManager.chromedriver().setup();
@@ -58,9 +58,10 @@ public class BaseClass  {
         getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         return getDriver();
     }
+
     //Loading a config file
-    @BeforeTest
-    public void loadConfig(){
+    //@BeforeMethod
+    public static void loadConfig(){
             try{
                 prop = new Properties();
                 System.out.println("Super constructor invoked");
@@ -81,8 +82,9 @@ public class BaseClass  {
    //closing a browser driver
     @AfterTest()
     public void tearDown() {
-        getDriver().quit();
         ExtentManager.endReport();
+        getDriver().quit();
+        getDriver().close();
     }
     public static String getCurrentTime1(){
             String currentDate  = new SimpleDateFormat("yyyy-mm-dd-hhmmss").format(new Date());
