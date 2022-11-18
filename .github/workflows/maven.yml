@@ -38,7 +38,7 @@ jobs:
       id: read_property
       uses: christian-draeger/read-properties@1.1.0
       with:
-        path: './reveal_automation_framework/config.properties'
+        path: '/home/runner/work/reveal_automation_framework/reveal_automation_framework\config.properties'
         properties: 'the.key.of.a.property the.key.of.another.property'
     - run: mkdir staging && cp target/*.jar staging
     - uses: actions/upload-artifact@v3
