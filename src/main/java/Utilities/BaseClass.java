@@ -76,13 +76,13 @@ public class BaseClass  {
     @BeforeTest()
     public void setup() {
         launchApp();
-        //ExtentManager.setExtent();
+        ExtentManager.setExtent();
     }
    //closing a browser driver
     @AfterTest()
     public void tearDown() {
         getDriver().quit();
-        //ExtentManager.endReport();
+        ExtentManager.endReport();
     }
     public static String getCurrentTime1(){
             String currentDate  = new SimpleDateFormat("yyyy-mm-dd-hhmmss").format(new Date());

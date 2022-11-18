@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa20c4e5-86be-45f2-a8f0-449935c10242" name="Changes" comment="fixing maven surefire plugin">
+    <list default="true" id="fa20c4e5-86be-45f2-a8f0-449935c10242" name="Changes" comment="adding more test class on testng.xml">
+      <change afterPath="$PROJECT_DIR$/profiles.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/BaseClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -307,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668777663296</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="adding more test class on testng.xml">
+      <created>1668778974770</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1668778974770</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -329,7 +338,8 @@
     <MESSAGE value="fixing extent report" />
     <MESSAGE value="andding maven surefire plugin" />
     <MESSAGE value="fixing maven surefire plugin" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing maven surefire plugin" />
+    <MESSAGE value="adding more test class on testng.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding more test class on testng.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
