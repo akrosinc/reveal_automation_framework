@@ -2,6 +2,7 @@ import PageObjects.PlanPage;
 import PageObjects.SignInPage;
 import PageObjects.UserPage;
 import Utilities.BaseClass;
+import Utilities.Constants;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -13,7 +14,7 @@ public class UserTests extends BaseClass {
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         UserPage userPage = PageFactory.initElements(getDriver(), UserPage.class);
         login.clickLogInBtn();
-        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        login.signIn(Constants.username,Constants.password);
         userPage.clickUserManagementBtn();
         userPage.clickCreateOrganizationBtn();
         userPage.enterOrganisationDetails(org_name);
@@ -24,7 +25,7 @@ public class UserTests extends BaseClass {
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         UserPage userPage = PageFactory.initElements(getDriver(), UserPage.class);
         login.clickLogInBtn();
-        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        login.signIn(Constants.username,Constants.password);
         userPage.clickUserManagementBtn();
         userPage.clickCreateOrganizationBtn();
         userPage.enterChildOrganisationDetails(org_name);
@@ -35,7 +36,7 @@ public class UserTests extends BaseClass {
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         UserPage userPage = PageFactory.initElements(getDriver(), UserPage.class);
         login.clickLogInBtn();
-        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        login.signIn(Constants.username,Constants.password);
         userPage.clickUserManagementBtn();
         userPage.clickCreateOrganizationBtn();
         userPage.enterOrganisationDetailsWithOutTpe(org_name);
@@ -46,7 +47,7 @@ public class UserTests extends BaseClass {
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         UserPage userPage = PageFactory.initElements(getDriver(), UserPage.class);
         login.clickLogInBtn();
-        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        login.signIn(Constants.username,Constants.password);
         userPage.clickUserManagementBtn();
         userPage.clickCreateOrganizationBtn();
         userPage.enterOrganisationDetailsWithOutTpe(org_name);
@@ -57,7 +58,7 @@ public class UserTests extends BaseClass {
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         UserPage userPage = PageFactory.initElements(getDriver(), UserPage.class);
         login.clickLogInBtn();
-        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        login.signIn(Constants.username,Constants.password);
         userPage.clickUserManagementBtn();
         userPage.openOrganisationDetails(org_name);
         userPage.clickOrgEditBtn();
@@ -69,7 +70,7 @@ public class UserTests extends BaseClass {
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         UserPage userPage = PageFactory.initElements(getDriver(), UserPage.class);
         login.clickLogInBtn();
-        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        login.signIn(Constants.username,Constants.password);
         userPage.clickUserManagementBtn();
         userPage.clickUserTab();
         userPage.expandUserDetails("qa.automation.user");
@@ -83,7 +84,7 @@ public class UserTests extends BaseClass {
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         UserPage userPage = PageFactory.initElements(getDriver(), UserPage.class);
         login.clickLogInBtn();
-        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        login.signIn(Constants.username,Constants.password);
         userPage.clickUserManagementBtn();
         userPage.openOrganisationDetails(org_name);
         userPage.clickDeleteBtn();
@@ -95,7 +96,7 @@ public class UserTests extends BaseClass {
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         UserPage userPage = PageFactory.initElements(getDriver(), UserPage.class);
         login.clickLogInBtn();
-        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        login.signIn(Constants.username,Constants.password);
         userPage.clickUserManagementBtn();
         userPage.clickUserTab();
         userPage.expandUserDetails("qa.automation.user");
@@ -108,7 +109,7 @@ public class UserTests extends BaseClass {
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         UserPage userPage = PageFactory.initElements(getDriver(), UserPage.class);
         login.clickLogInBtn();
-        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        login.signIn(Constants.username,Constants.password);
         userPage.clickUserManagementBtn();
         userPage.clickUserTab();
         userPage.clickCreateUserBtn();
@@ -120,7 +121,7 @@ public class UserTests extends BaseClass {
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         UserPage userPage = PageFactory.initElements(getDriver(), UserPage.class);
         login.clickLogInBtn();
-        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        login.signIn(Constants.username,Constants.password);
         userPage.clickUserManagementBtn();
         userPage.clickUserTab();
         userPage.clickCreateUserBtn();
@@ -132,7 +133,7 @@ public class UserTests extends BaseClass {
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         UserPage userPage = PageFactory.initElements(getDriver(), UserPage.class);
         login.clickLogInBtn();
-        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        login.signIn(Constants.username,Constants.password);
         userPage.clickUserManagementBtn();
         userPage.clickUserTab();
         userPage.clickCreateUserBtn();
@@ -145,7 +146,7 @@ public class UserTests extends BaseClass {
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         UserPage userPage = PageFactory.initElements(getDriver(), UserPage.class);
         login.clickLogInBtn();
-        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        login.signIn(Constants.username,Constants.password);
         userPage.clickUserManagementBtn();
         userPage.openOrganisationDetails("QA Testing");
         userPage.clickOrgEditBtn();

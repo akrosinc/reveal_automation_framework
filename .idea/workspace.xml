@@ -4,22 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa20c4e5-86be-45f2-a8f0-449935c10242" name="Changes" comment="remove use of property file values.">
+    <list default="true" id="fa20c4e5-86be-45f2-a8f0-449935c10242" name="Changes" comment="fixing BaseClass url.">
       <change afterPath="$PROJECT_DIR$/ScreenShots/ChangeInterventionTest_20221118063330.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ScreenShots/loginTest_20221118063238.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-28-20-042825.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-29-20-042944.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-31-18-063143.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-31-20-043101.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-32-18-063235.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-54-18-075405.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-57-18-075748.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/SignInPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LogInPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LogInPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LocationManagementTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LocationManagementTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PlanTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlanTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExtentReport/ExtentManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExtentReport/ExtentManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/UserPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjects/UserPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Utilities/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/BaseClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Constants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/LogInPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LogInPageTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +90,7 @@
       <recent name="C:\Users\yntlokwana\IdeaProjects\Reveal_AutomationFramework\src" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LogInPageTest.loginTest">
+  <component name="RunManager" selected="TestNG.C:/Users/yntlokwana/IdeaProjects/reveal_automation_framework/testng.xml">
     <configuration name="C:/Users/yntlokwana/IdeaProjects/reveal_automation_framework/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Reveal_Automation_Framework" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -151,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/yntlokwana/IdeaProjects/reveal_automation_framework/testng.xml" />
         <item itemvalue="TestNG.LogInPageTest.loginTest" />
         <item itemvalue="TestNG.LogInPageTest" />
         <item itemvalue="TestNG.LogInPageTest.loginTest (2)" />
         <item itemvalue="TestNG.LogInPageTest.loginTest (1)" />
-        <item itemvalue="TestNG.C:/Users/yntlokwana/IdeaProjects/reveal_automation_framework/testng.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -364,7 +365,28 @@
       <option name="project" value="LOCAL" />
       <updated>1668953841402</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="remove use of property file values.">
+      <created>1668954712590</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1668954712590</updated>
+    </task>
+    <task id="LOCAL-00030" summary="fixing BaseClass url.">
+      <created>1668955490906</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1668955490906</updated>
+    </task>
+    <task id="LOCAL-00031" summary="fixing BaseClass url.">
+      <created>1668956141640</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1668956141640</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -389,89 +411,90 @@
     <MESSAGE value="adding more test class on testng.xml" />
     <MESSAGE value="fixing extent report test class on testng.xml" />
     <MESSAGE value="remove use of property file values." />
-    <option name="LAST_COMMIT_MESSAGE" value="remove use of property file values." />
+    <MESSAGE value="fixing BaseClass url." />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing BaseClass url." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PlanTests.java</url>
-          <line>19</line>
+          <line>20</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PlanTests.java</url>
-          <line>32</line>
+          <line>33</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserTests.java</url>
-          <line>16</line>
+          <line>17</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserTests.java</url>
-          <line>39</line>
+          <line>40</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserTests.java</url>
-          <line>36</line>
+          <line>37</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserTests.java</url>
-          <line>62</line>
+          <line>63</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserTests.java</url>
-          <line>61</line>
+          <line>62</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserTests.java</url>
-          <line>17</line>
+          <line>18</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PlanTests.java</url>
-          <line>84</line>
+          <line>85</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PlanTests.java</url>
-          <line>86</line>
+          <line>87</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PlanTests.java</url>
-          <line>97</line>
+          <line>98</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserTests.java</url>
-          <line>136</line>
+          <line>137</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/LocationManagementTests.java</url>
-          <line>63</line>
+          <line>64</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserTests.java</url>
-          <line>150</line>
+          <line>151</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserTests.java</url>
-          <line>149</line>
+          <line>150</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PlanTests.java</url>
-          <line>110</line>
+          <line>111</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -481,77 +504,72 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/LocationManagementTests.java</url>
-          <line>75</line>
+          <line>76</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/LocationManagementTests.java</url>
-          <line>49</line>
+          <line>50</line>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/LocationManagementTests.java</url>
-          <line>87</line>
+          <line>88</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PlanTests.java</url>
-          <line>54</line>
+          <line>55</line>
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserTests.java</url>
-          <line>124</line>
+          <line>125</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserTests.java</url>
-          <line>88</line>
+          <line>89</line>
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/PlanTests.java</url>
-          <line>71</line>
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserTests.java</url>
-          <line>101</line>
+          <line>102</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserTests.java</url>
-          <line>73</line>
+          <line>74</line>
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserTests.java</url>
-          <line>75</line>
+          <line>76</line>
           <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PlanTests.java</url>
-          <line>147</line>
+          <line>148</line>
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PlanTests.java</url>
-          <line>161</line>
+          <line>162</line>
           <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PlanTests.java</url>
-          <line>125</line>
+          <line>126</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PlanTests.java</url>
-          <line>124</line>
+          <line>125</line>
           <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PlanTests.java</url>
-          <line>137</line>
+          <line>138</line>
           <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

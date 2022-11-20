@@ -4,13 +4,14 @@
     <listeners>
         <listener class-name="ExtentReport.ListenerClass"></listener>
     </listeners>
-    <test verbose="2" preserve-order="true" name="C:/Users/yntlokwana/IdeaProjects/reveal_automation_framework">
+<!--    <test verbose="2" preserve-order="true" name="C:/Users/yntlokwana/IdeaProjects/reveal_automation_framework">-->
+    <test name="C:/Users/yntlokwana/IdeaProjects/reveal_automation_framework">
         <parameter name="browser" value="chrome"/>
         <classes>
             <class name="LogInPageTest" />
+            <class name="LocationManagementTests" />
             <class name="PlanTests" />
             <class name="UserTests" />
-            <class name="LocationManagementTests" />
         </classes>
     </test>
 </suite>

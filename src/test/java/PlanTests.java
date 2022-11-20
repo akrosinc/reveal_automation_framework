@@ -1,6 +1,7 @@
 import PageObjects.PlanPage;
 import PageObjects.SignInPage;
 import Utilities.BaseClass;
+import Utilities.Constants;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -16,7 +17,7 @@ public class PlanTests extends BaseClass {
         PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         login.clickLogInBtn();
-        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        login.signIn(Constants.username,Constants.password);
         plan.clickPlanManagementBtn();
         plan.clickCreatePlanBtn();
         plan.enterPlanDetails(plan_name);
@@ -29,7 +30,7 @@ public class PlanTests extends BaseClass {
         PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         login.clickLogInBtn();
-        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        login.signIn(Constants.username,Constants.password);
         plan.clickPlanManagementBtn();
         plan.clickCreatePlanBtn();
         plan.enterPlanDetails(plan_name);
@@ -45,7 +46,7 @@ public class PlanTests extends BaseClass {
         PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         login.clickLogInBtn();
-        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        login.signIn(Constants.username,Constants.password);
         plan.clickPlanManagementBtn();
         plan.openPlan();
         plan.clickGoalTab();
@@ -62,7 +63,7 @@ public class PlanTests extends BaseClass {
         PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         login.clickLogInBtn();
-        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        login.signIn(Constants.username,Constants.password);
         plan.clickPlanManagementBtn();
         plan.openPlan();
         plan.clickGoalTab();
@@ -79,7 +80,7 @@ public class PlanTests extends BaseClass {
         PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         login.clickLogInBtn();
-        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        login.signIn(Constants.username,Constants.password);
         plan.clickPlanManagementBtn();
         plan.openPlan();
         plan.clickGoalTab();
@@ -93,7 +94,7 @@ public class PlanTests extends BaseClass {
         PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         login.clickLogInBtn();
-        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        login.signIn(Constants.username,Constants.password);
         plan.clickPlanManagementBtn();
         plan.openPlan();
         plan.editPlanTitle("edited testing title");
@@ -106,7 +107,7 @@ public class PlanTests extends BaseClass {
         PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         login.clickLogInBtn();
-        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        login.signIn(Constants.username,Constants.password);
         plan.clickPlanManagementBtn();
         plan.openPlan();
         plan.updatePlanDetails(plan_name);
@@ -117,7 +118,7 @@ public class PlanTests extends BaseClass {
         PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         login.clickLogInBtn();
-        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        login.signIn(Constants.username,Constants.password);
         plan.clickPlanManagementBtn();
         plan.clickCreatePlanBtn();
         plan.enterPlanDetails(activePlanTitle);
@@ -132,7 +133,7 @@ public class PlanTests extends BaseClass {
         PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         login.clickLogInBtn();
-        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        login.signIn(Constants.username,Constants.password);
         plan.clickPlanManagementBtn();
         plan.openPlan();
         boolean type = plan.changeInterventionType();
@@ -143,7 +144,7 @@ public class PlanTests extends BaseClass {
         PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         login.clickLogInBtn();
-        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        login.signIn(Constants.username,Constants.password);
         plan.clickPlanAssignmentBtn();
         plan.openPlan();
         plan.clickAssignLocationTab();
@@ -156,7 +157,7 @@ public class PlanTests extends BaseClass {
         PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         login.clickLogInBtn();
-        login.signIn(prop.getProperty("username"),prop.getProperty("password"));
+        login.signIn(Constants.username,Constants.password);
         plan.clickPlanAssignmentBtn();
         plan.openPlan();
         plan.clickAssignTeamTab();
