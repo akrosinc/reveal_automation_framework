@@ -12,8 +12,8 @@
       <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-54-18-075405.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-57-18-075748.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/SignInPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjects/SignInPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/SignInPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Utilities/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/BaseClass.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +84,7 @@
       <recent name="C:\Users\yntlokwana\IdeaProjects\Reveal_AutomationFramework\src" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LogInPageTest.loginTest">
+  <component name="RunManager" selected="TestNG.LogInPageTest.loginTest (2)">
     <configuration name="C:/Users/yntlokwana/IdeaProjects/reveal_automation_framework/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Reveal_Automation_Framework" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -120,6 +120,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LogInPageTest.loginTest (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Reveal_Automation_Framework" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LogInPageTest" />
+      <option name="METHOD_NAME" value="loginTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LogInPageTest.loginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Reveal_Automation_Framework" />
       <option name="PACKAGE_NAME" value="" />
@@ -132,25 +144,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlanTests.deleteGoalsActionTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Reveal_Automation_Framework" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PlanTests" />
-      <option name="METHOD_NAME" value="deleteGoalsActionTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LogInPageTest.loginTest (2)" />
         <item itemvalue="TestNG.LogInPageTest.loginTest" />
         <item itemvalue="TestNG.LogInPageTest" />
         <item itemvalue="TestNG.LogInPageTest.loginTest (1)" />
         <item itemvalue="TestNG.C:/Users/yntlokwana/IdeaProjects/reveal_automation_framework/testng.xml" />
-        <item itemvalue="TestNG.PlanTests.deleteGoalsActionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -338,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668794462554</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="fixing extent report test class on testng.xml">
+      <created>1668804842102</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1668804842102</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -536,6 +543,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/LogInPageTest.java</url>
           <line>15</line>
           <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Utilities/BaseClass.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="68" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
