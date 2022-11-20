@@ -44,7 +44,7 @@ public class SignInPage extends BaseClass {
     }
      public boolean isUserSignedIn()
      {
-            action.explicitWait(getDriver(),signOutBtn,40);
+            action.explicitWait(getDriver(),signOutBtn,30);
             return action.isDisplayed(getDriver(),signOutBtn);
      }
 }

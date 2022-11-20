@@ -35,24 +35,11 @@ public class BaseClass  {
         return driver.get();
     }
     //Launching a browser  and sending an url
+
     public static  WebDriver launchApp(){
         loadConfig();
-
-          WebDriverManager.chromedriver().setup();
-          ChromeOptions options = new ChromeOptions();
-          options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors",
-                  "--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
-          driver.set(new ChromeDriver(options));
-        //Maximize the screen
-        getDriver().manage().window().maximize();
-        //Launching the URL
-        getDriver().get(prop.getProperty("baseUrl"));
-        getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        return getDriver();
-    }
-   /* public static  WebDriver launchApp(){
-        loadConfig();
-        String browserName= prop.getProperty("browser");
+        String browserName= Constants.browser;
+        //String browserName= prop.getProperty("browser")
         if(browserName.equalsIgnoreCase("Chrome")){
             WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
@@ -73,7 +60,7 @@ public class BaseClass  {
         getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         return getDriver();
     }
-*/
+
     //Loading a config file
     @BeforeMethod
     public static void loadConfig(){
@@ -99,7 +86,6 @@ public class BaseClass  {
     public void tearDown() {
         ExtentManager.endReport();
         getDriver().quit();
-        getDriver().close();
     }
     public static String getCurrentTime1(){
             String currentDate  = new SimpleDateFormat("yyyy-mm-dd-hhmmss").format(new Date());

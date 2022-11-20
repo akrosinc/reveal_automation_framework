@@ -4,16 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa20c4e5-86be-45f2-a8f0-449935c10242" name="Changes" comment="fixing extent report test class on testng.xml">
+    <list default="true" id="fa20c4e5-86be-45f2-a8f0-449935c10242" name="Changes" comment="remove use of property file values.">
       <change afterPath="$PROJECT_DIR$/ScreenShots/ChangeInterventionTest_20221118063330.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ScreenShots/loginTest_20221118063238.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-28-20-042825.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-31-18-063143.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-32-18-063235.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-54-18-075405.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-57-18-075748.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/SignInPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LogInPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LogInPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/BaseClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/LogInPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LogInPageTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +89,7 @@
       <recent name="C:\Users\yntlokwana\IdeaProjects\Reveal_AutomationFramework\src" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LogInPageTest.loginTest (2)">
+  <component name="RunManager" selected="TestNG.LogInPageTest.loginTest">
     <configuration name="C:/Users/yntlokwana/IdeaProjects/reveal_automation_framework/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Reveal_Automation_Framework" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -145,9 +151,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LogInPageTest.loginTest (2)" />
         <item itemvalue="TestNG.LogInPageTest.loginTest" />
         <item itemvalue="TestNG.LogInPageTest" />
+        <item itemvalue="TestNG.LogInPageTest.loginTest (2)" />
         <item itemvalue="TestNG.LogInPageTest.loginTest (1)" />
         <item itemvalue="TestNG.C:/Users/yntlokwana/IdeaProjects/reveal_automation_framework/testng.xml" />
       </list>
@@ -351,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668950815920</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="remove use of property file values.">
+      <created>1668953841402</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1668953841402</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -375,7 +388,8 @@
     <MESSAGE value="fixing maven surefire plugin" />
     <MESSAGE value="adding more test class on testng.xml" />
     <MESSAGE value="fixing extent report test class on testng.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing extent report test class on testng.xml" />
+    <MESSAGE value="remove use of property file values." />
+    <option name="LAST_COMMIT_MESSAGE" value="remove use of property file values." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -547,7 +561,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/LogInPageTest.java</url>
-          <line>17</line>
+          <line>18</line>
           <option name="timeStamp" value="67" />
         </line-breakpoint>
       </breakpoints>
