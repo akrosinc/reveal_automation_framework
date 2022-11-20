@@ -1,5 +1,6 @@
 package ExtentReport;
 
+import Utilities.Constants;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -34,9 +35,9 @@ public class ExtentManager {
 
         extent.setSystemInfo("HostName", "MyHost");
         extent.setSystemInfo("ProjectName", "Reveal Web Automation");
-        extent.setSystemInfo("Tester", prop.getProperty("username"));
+        extent.setSystemInfo("Tester", Constants.username);
         extent.setSystemInfo("OS", "Win10");
-        extent.setSystemInfo("Browser", prop.getProperty("browser"));
+        extent.setSystemInfo("Browser", Constants.browser);
     }
      @AfterTest
     public static void endReport() {

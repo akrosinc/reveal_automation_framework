@@ -1,6 +1,7 @@
 package PageObjects;
 import ActionDriver.Action;
 import Utilities.BaseClass;
+import Utilities.Constants;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -125,14 +126,14 @@ public class UserPage extends BaseClass{
         action.type(username_input,"qa.automation.user");
         action.type(first_name_input,fname);
         action.type(last_name_input,lname);
-        action.type(password_input,prop.getProperty("password"));
+        action.type(password_input,Constants.password);
         action.click(getDriver(),user_submit_btn);
     }
     public void editUser(String fname, String lname){
         action.type(username_input,"automation.user");
         action.type(first_name_input,fname);
         action.type(last_name_input,lname);
-        action.type(password_input,prop.getProperty("password"));
+        action.type(password_input, Constants.password);
         action.JSClick(getDriver(),organization_save_btn);
     }
     public void toggleInactive(){
