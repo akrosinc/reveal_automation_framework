@@ -35,7 +35,18 @@ jobs:
       #run: mvn clean verify
       #run: mvn clean package -Dmaven.test.skip=true
       #run: mvn compile test -e
-    
+    - name: Test Report
+      uses: phoenix-actions/test-reporting@v8
+      id: test-report               #Set ID reference for step
+      if: success() || failure()    # run this step even if previous step failed
+      with:
+          name: JEST Tests            # Name of the check run which will be created
+          path: reports/jest-*.xml    # Path to test results
+          reporter: jest-junit        # Format of test results
+
+    - name: Read output variables
+      run: |
+          echo "url is ${{ steps.test-report.outputs.runHtmlUrl }}"
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
       uses: advanced-security/maven-dependency-submission-action@571e99aab1055c2e71a1e2309b9691de18d6b7d6
