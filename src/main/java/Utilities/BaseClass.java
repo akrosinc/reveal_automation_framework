@@ -37,7 +37,7 @@ public class BaseClass  {
     //Launching a browser  and sending an url
 
     public static  WebDriver launchApp(){
-        loadConfig();
+        //loadConfig();
         String browserName= Constants.browser;
         //String browserName= prop.getProperty("browser")
         if(browserName.equalsIgnoreCase("Chrome")){
@@ -45,7 +45,7 @@ public class BaseClass  {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors",
                     "--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
-            driver.set(new ChromeDriver());
+            driver.set(new ChromeDriver(options));
         }else if(browserName.equalsIgnoreCase("FireFox")){
             WebDriverManager.firefoxdriver().setup();
             driver.set(new FirefoxDriver());
@@ -56,13 +56,13 @@ public class BaseClass  {
         //Maximize the screen
         getDriver().manage().window().maximize();
         //Launching the URL
-        getDriver().get(prop.getProperty("baseUrl"));
+        getDriver().get(Constants.baseUrl);
         getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         return getDriver();
     }
 
     //Loading a config file
-    @BeforeMethod
+    //@BeforeMethod
     public static void loadConfig(){
             try{
                 prop = new Properties();
