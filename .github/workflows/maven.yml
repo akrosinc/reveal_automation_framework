@@ -34,14 +34,13 @@ jobs:
       #run: mvn surefire-report:report  
       #run: mvn clean verify
       #run: mvn clean package -Dmaven.test.skip=true
-      run: mvn compile test -e
+      #run: mvn compile test -e
+      run: mvn clean test
     - name: Publish Test Results
       uses: EnricoMi/publish-unit-test-result-action/composite@v2
       if: always()
       with:
        junit_files: "test-results/junit/**/*.xml"
-       nunit_files: "test-results/nunit/**/*.xml"
-       xunit_files: "test-results/xunit/**/*.xml"
        trx_files: "test-results/**/*.trx"
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
