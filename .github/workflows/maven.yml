@@ -36,7 +36,7 @@ jobs:
       #run: mvn clean package -Dmaven.test.skip=true
       #run: mvn compile test -e
       #run: mvn clean test
-      run: mvn test --batch-mode --fail-at-end  clean test -Dsurefire.suiteXmlFiles=testng.xml
+      run: mvn test --batch-mode --fail-at-end 
     - name: Publish Test Report
       if: ${{ always() }}
       uses: scacap/action-surefire-report@v1
