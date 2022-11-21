@@ -35,8 +35,8 @@ jobs:
       #run: mvn clean verify
       #run: mvn clean package -Dmaven.test.skip=true
       #run: mvn compile test -e
-      run: mvn clean test
-      #run: mvn test --batch-mode --fail-at-end --file pom.xml
+      #run: mvn clean test
+      run: mvn test --batch-mode --fail-at-end
       #run: mvn test --batch-mode --file pom.xml
     - name: Publish Test Report
       if: ${{ always() }}
