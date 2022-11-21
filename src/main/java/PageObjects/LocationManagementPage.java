@@ -95,7 +95,7 @@ public class LocationManagementPage extends BaseClass{
     }
     public void createGeographicHierarchy(){
        try {
-           var name = action.findElement(getDriver(), default_location_hierarchy_name);
+           boolean name = action.findElement(getDriver(), default_location_hierarchy_name);
            if (!name) {
                action.click(getDriver(), location_create_btn);
                action.type(location_name_input, "testing");

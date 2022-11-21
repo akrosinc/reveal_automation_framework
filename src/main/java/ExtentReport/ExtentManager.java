@@ -22,7 +22,7 @@ public class ExtentManager {
     public static ExtentTest test;
 
     @BeforeMethod
-    public static void setExtent(){
+    public static void setExtent()  {
 
         spark= new ExtentSparkReporter(System.getProperty("user.dir")+"/test-output/ExtentReport/"+"MyReport_"+getCurrentTime1()+".html");
         //spark.loadXMLConfig(System.getProperty("user.dir")+"/extent-config.xml");
