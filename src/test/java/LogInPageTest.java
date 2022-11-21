@@ -11,8 +11,7 @@ import static ExtentReport.ExtentManager.*;
 
 public class LogInPageTest extends BaseClass {
 
-    @Test()
-    @Parameters("browser")
+    @Test(testName = "Login test")
     public void loginTest() throws Throwable {
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         login.clickLogInBtn();
