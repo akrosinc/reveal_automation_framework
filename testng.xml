@@ -8,9 +8,9 @@
     <test name="C:/Users/yntlokwana/IdeaProjects/reveal_automation_framework">
         <parameter name="browser" value="chrome"/>
         <classes>
+            <class name="PlanTests" />
             <class name="LogInPageTest" />
             <class name="LocationManagementTests" />
-            <class name="PlanTests" />
             <class name="UserTests" />
         </classes>
     </test>
