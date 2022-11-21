@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa20c4e5-86be-45f2-a8f0-449935c10242" name="Changes" comment="fixing BaseClass url.">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reveal_Automation_Framework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Reveal_Automation_Framework.iml" afterDir="false" />
+    <list default="true" id="fa20c4e5-86be-45f2-a8f0-449935c10242" name="Changes" comment="fixing dependency on pom.xml.">
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/LocationManagementTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LocationManagementTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/LogInPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LogInPageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PlanTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PlanTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/UserTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/UserTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-29-20-042944.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-57-21-125740.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-31-20-043101.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-59-21-125912.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-29-20-042944.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-59-21-125912.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-31-20-043101.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -395,7 +388,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669026897631</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="fixing dependecies on pom.xml.">
+      <created>1669028681300</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1669028681300</updated>
+    </task>
+    <task id="LOCAL-00035" summary="fixing dependency on pom.xml.">
+      <created>1669029010183</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1669029010183</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -421,7 +428,9 @@
     <MESSAGE value="fixing extent report test class on testng.xml" />
     <MESSAGE value="remove use of property file values." />
     <MESSAGE value="fixing BaseClass url." />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing BaseClass url." />
+    <MESSAGE value="fixing dependecies on pom.xml." />
+    <MESSAGE value="fixing dependency on pom.xml." />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing dependency on pom.xml." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
