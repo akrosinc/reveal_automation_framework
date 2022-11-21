@@ -13,7 +13,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-  <reporting>
+  <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -27,7 +27,7 @@
                 </configuration>
             </plugin>
         </plugins>
-    </reporting>
+    </build>
     <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
