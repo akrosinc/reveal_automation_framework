@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class LocationManagementTests extends BaseClass {
+public class LocationManagementTest extends BaseClass {
 
     @Test()
     public void accessLocationManagementAreaTest() throws Throwable {

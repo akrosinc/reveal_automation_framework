@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import static PageObjects.PlanPage.activePlanTitle;
 
 
-public class PlanTests extends BaseClass {
+public class PlanTest extends BaseClass {
    private  String plan_name = "testing qa";
     private  String goal_description = "Drug treatment";
     @Test() //Create plan without goals

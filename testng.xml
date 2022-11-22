@@ -8,10 +8,10 @@
     <test verbose="2" name="tests">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="PlanTests" />
+            <class name="PlanTest" />
             <class name="LogInPageTest" />
-            <class name="LocationManagementTests" />
-            <class name="UserTests" />
+            <class name="LocationManagementTest" />
+            <class name="UserTest" />
         </classes>
     </test>
 </suite>

@@ -1,4 +1,3 @@
-import PageObjects.PlanPage;
 import PageObjects.SignInPage;
 import PageObjects.UserPage;
 import Utilities.BaseClass;
@@ -7,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class UserTests extends BaseClass {
+public class UserTest extends BaseClass {
    public  String org_name ="QA Testing";
     @Test()
     public void createOrganisationTest() throws Throwable {
