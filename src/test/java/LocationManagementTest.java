@@ -2,6 +2,7 @@ import PageObjects.LocationManagementPage;
 import PageObjects.SignInPage;
 import Utilities.BaseClass;
 import Utilities.Constants;
+import Utilities.Log;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -10,12 +11,15 @@ public class LocationManagementTest extends BaseClass {
 
     @Test()
     public void accessLocationManagementAreaTest() throws Throwable {
+        Log.startTestCase("accessLocationManagementAreaTest");
         SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
         LocationManagementPage page = PageFactory.initElements(getDriver(), LocationManagementPage.class);
         login.clickLogInBtn();
         login.signIn(Constants.username,Constants.password);
         page.clickLocationManagementBtn();
         Assert.assertTrue(page.isLocationManagementAccessible(), "location management area not accessible");
+        Log.endTestCase("accessLocationManagementAreaTest");
+
     }
     @Test()
     public void CreateGeographicLevelTest() throws Throwable {
