@@ -28,8 +28,9 @@ jobs:
         distribution: 'adopt'
         cache: maven
     - name: Build with Maven
+      #run: mvn --batch-mode -Dmaven.test.failure.ignore=true test
       #run: mvn install -DskipTests
-      run: mvn -B package --file pom.xml --update-snapshots verify surefire-report:report  
+      run: mvn -B package --file pom.xml --update-snapshots verify surefire-report:report  -Dmaven.test.failure.ignore=true test
       #run: mvn --batch-mode --update-snapshots verify
       #run: mvn surefire-report:report  
       #run: mvn clean verify
@@ -38,9 +39,17 @@ jobs:
       #run: mvn clean test
       #run: mvn test --batch-mode --fail-at-end
       #run: mvn test --batch-mode --file pom.xml
-    - name: Publish Test Report
-      if: ${{ always() }}
-      uses: scacap/action-surefire-report@v1
+    - name: Report
+      uses: dorny/test-reporter@v1
+      if: always()
+      with:
+          name: Maven Tests
+          path: target/surefire-reports/*.xml
+          reporter: java-junit
+          fail-on-error: true
+   #- name: Publish Test Report
+     # if: ${{ always() }}
+     # uses: scacap/action-surefire-report@v1
   
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
