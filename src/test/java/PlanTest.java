@@ -21,7 +21,8 @@ public class PlanTest extends BaseClass {
         plan.clickPlanManagementBtn();
         plan.clickCreatePlanBtn();
         plan.enterPlanDetails(plan_name);
-        plan.clickPlanUpdateBtn();
+        plan.submitPlan();
+        plan.confirmBtn();
         Assert.assertTrue(plan.isPlanOnTheTable(), "plan created not found in the table");
     }
     //Create plan with goals
@@ -85,49 +86,26 @@ public class PlanTest extends BaseClass {
         plan.openPlan();
         plan.clickGoalTab();
         plan.expandGoals();
+        plan.clickCreateActionsBtn();
+        plan.CreateActions();
+        Assert.assertTrue(plan.isGoalDeleted(),"goal not deleted");;
+    }
+    //Delete Goal Action
+    @Test()
+    public void deleteGoalsTest() throws Throwable {
+        PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
+        SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
+        login.clickLogInBtn();
+        login.signIn(Constants.username,Constants.password);
+        plan.clickPlanManagementBtn();
+        plan.openPlan();
+        plan.clickGoalTab();
+        plan.expandGoals();
         plan.deleteGoalBtn();
         plan.confirmBtn();
         Assert.assertTrue(plan.isGoalDeleted(),"goal not deleted");;
     }
-    @Test()//update plan tile
-    public void updatePlanTitleTest() throws Throwable {
-        PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
-        SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
-        login.clickLogInBtn();
-        login.signIn(Constants.username,Constants.password);
-        plan.clickPlanManagementBtn();
-        plan.openPlan();
-        plan.editPlanTitle("edited testing title");
-        plan.clickPlanUpdateBtn();
-        plan.clickPlanBackBtn();
-        Assert.assertTrue(plan.isGPlanTitleEdited("edited testing title"),"plan title not successfully created");;
-    }
-    @Test()//update plan details
-    public void updatePlanTest() throws Throwable {
-        PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
-        SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
-        login.clickLogInBtn();
-        login.signIn(Constants.username,Constants.password);
-        plan.clickPlanManagementBtn();
-        plan.openPlan();
-        plan.updatePlanDetails(plan_name);
-        Assert.assertTrue(plan.isPlanUpdated("Plan updated successfully."),"plan not successfully updated");;
-    }
-    @Test()//Activate plan
-    public void activatePlanTest() throws Throwable {
-        PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
-        SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
-        login.clickLogInBtn();
-        login.signIn(Constants.username,Constants.password);
-        plan.clickPlanManagementBtn();
-        plan.clickCreatePlanBtn();
-        plan.enterPlanDetails(activePlanTitle);
-        plan.submitPlan();
-        plan.confirmBtn();
-        plan.clickActivatePlanBtn();
-        plan.submitActivatePlan();
-        Assert.assertTrue(plan.isPlanActivated(),"plan not successfully activated");;
-    }
+
     @Test()//Change intervention type
     public void ChangeInterventionTest() throws Throwable {
         PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
@@ -165,5 +143,46 @@ public class PlanTest extends BaseClass {
         plan.selectLocationsAssignment();
         plan.saveLocationAssignment();
         Assert.assertTrue(plan.isTeamAssignedToLocation(),"Team not assigned to location successfully");;
+    }
+    @Test()//update plan details
+    public void updatePlanTest() throws Throwable {
+        PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
+        SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
+        login.clickLogInBtn();
+        login.signIn(Constants.username,Constants.password);
+        plan.clickPlanManagementBtn();
+        plan.openPlan();
+        plan.updatePlanDetails(plan_name);
+        Assert.assertTrue(plan.isPlanUpdated("Plan updated successfully."),"plan not successfully updated");;
+    }
+    @Test()//update plan tile
+    public void updatePlanTitleTest() throws Throwable {
+        PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
+        SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
+        login.clickLogInBtn();
+        login.signIn(Constants.username,Constants.password);
+        plan.clickPlanManagementBtn();
+        plan.openPlan();
+        plan.editPlanTitle("edited testing title");
+        plan.clickPlanUpdateBtn();
+        plan.clickPlanBackBtn();
+        Assert.assertTrue(plan.isGPlanTitleEdited("edited testing title"),"plan title not successfully created");
+        plan.editPlanTitle(plan_name);
+
+    }
+    @Test()//Activate plan
+    public void activatePlanTest() throws Throwable {
+        PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
+        SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
+        login.clickLogInBtn();
+        login.signIn(Constants.username,Constants.password);
+        plan.clickPlanManagementBtn();
+        plan.clickCreatePlanBtn();
+        plan.enterPlanDetails(activePlanTitle);
+        plan.submitPlan();
+        plan.confirmBtn();
+        plan.clickActivatePlanBtn();
+        plan.submitActivatePlan();
+        Assert.assertTrue(plan.isPlanActivated(),"plan not successfully activated");;
     }
 }

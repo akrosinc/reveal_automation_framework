@@ -1,6 +1,7 @@
 package PageObjects;
 import ActionDriver.Action;
 import Utilities.BaseClass;
+import org.junit.platform.commons.function.Try;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NotFoundException;
 import org.openqa.selenium.WebDriver;
@@ -108,7 +109,7 @@ public class PlanPage extends BaseClass {
     WebElement condition_target_metric_value;
     @FindBy(how = How.ID, using ="condition-save-button")
     WebElement condition_condition_save_btn;
-    @FindBy(how = How.XPATH, using ="//div/div[2]/div/div[2]/div/div/div[1]/div[2]/button[2]")
+    @FindBy(how = How.XPATH, using ="//form[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/button[2]")
     WebElement delete_goal_btn;
     @FindBy(how = How.XPATH, using ="//button[contains(text(),'Confirm')]")
     WebElement confirm_button;
@@ -154,6 +155,10 @@ public class PlanPage extends BaseClass {
     WebElement activate_plan;
     @FindBy(how = How.ID, using ="activate-button")
     WebElement confirm_activate_plan;
+    @FindBy(how = How.XPATH, using ="//td[@class='text-center']")
+    WebElement expand_action;
+    @FindBy(how = How.XPATH, using ="//div[contains(text(),'Please select and save your changes, at least one location needs to be able selected to assign teams.')]")
+    WebElement getTeam_assigned_warning_toast;
     public PlanPage(WebDriver driver){
         this.driver = driver;
     }
@@ -174,8 +179,10 @@ public class PlanPage extends BaseClass {
     }
     public void updatePlanDetails(String plan_name) {
         action.type(plan_title_input,plan_name);
+        start_date_picker.clear();
         action.type(start_date_picker,getCurrentDate());
         getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        end_date_picker.clear();
         action.type(end_date_picker,getCurrentDate());
         getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         action.SelectDropDown(select_hierarchy);
@@ -195,21 +202,38 @@ public class PlanPage extends BaseClass {
     public void clickAssignTeamTab(){
         action.explicitWait(getDriver(),assign_team_tab,30);
         getDriver().manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-        action.click(getDriver(),assign_team_tab);
+        boolean accessAsignTeamTab = false;
+        try {
+            action.JSClick(getDriver(),assign_team_tab);
+            accessAsignTeamTab= action.findElement(getDriver(),getTeam_assigned_warning_toast);
+        }catch (NotFoundException ex){}
+        if (accessAsignTeamTab){
+            selectLocationAssign();
+            saveLocationAssignment();
+            getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            action.JSClick(getDriver(),assign_team_tab);
+        }else {
+            action.JSClick(getDriver(),assign_team_tab);
+        }
+
     }
     public void selectTeam(){
         action.SelectDropDown(select_team_assignment);
     }
     public void selectLocationsAssignment(){
         action.type(select_location_assignment,"a");
-        action.explicitWait(getDriver(),select_location_assignmentDiv,10);
+        action.explicitWait(getDriver(),select_location_assignmentDiv,30);
         action.JSClick(getDriver(),select_location_assignmentDiv);
     }
+
     public void clickPlanAssignmentBtn(){
         action.JSClick(getDriver(),plan_assignment_main_btn);
     }
     public void clickAssignLocationTab(){
         action.click(getDriver(),assign_location_tab);
+    }
+    public void clickEditActionBtn(){
+        action.click(getDriver(),expand_action);
     }
     public void selectLocationAssign(){
         action.JSClick(getDriver(),plan_location_selectBox);
@@ -300,7 +324,7 @@ public class PlanPage extends BaseClass {
     }
 
     public void deleteGoalBtn(){
-        action.click(getDriver(),delete_goal_btn);
+        action.JSClick(getDriver(),delete_goal_btn);
     }
     public void confirmBtn(){
         action.JSClick(getDriver(), confirm_button);
@@ -318,7 +342,7 @@ public class PlanPage extends BaseClass {
         action.type(plan_title_input,title);
     }
     public void clickPlanUpdateBtn(){
-        action.click(getDriver(),update_details_btn);
+        action.JSClick(getDriver(),update_details_btn);
     }
     public boolean isActionsOnTheTable(){return action.isDisplayed(getDriver(),action_exist);}
     public boolean isPlanOnTheTable(){return action.isDisplayed(getDriver(),confirm_plan_on_table);}
@@ -327,6 +351,7 @@ public class PlanPage extends BaseClass {
         return edited_goal_toast.isDisplayed();
     }
     public boolean isTeamAssignedToLocation(){
+        action.explicitWait(getDriver(),team_assigned_toast,40);
         return team_assigned_toast.isDisplayed();
     }
     public boolean isGPlanTitleEdited(String title){
@@ -343,5 +368,5 @@ public class PlanPage extends BaseClass {
         return plan_location_assignment_toast.isDisplayed();
     }
     public boolean isGoalDeleted(){
-        return !goal_created.isDisplayed();}
+        return goal_created.isDisplayed();}
 }
