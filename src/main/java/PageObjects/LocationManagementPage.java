@@ -110,8 +110,8 @@ public class LocationManagementPage extends BaseClass{
     public boolean isLocationHierarchyNameDisplayed(){
         return default_location_hierarchy_name.isDisplayed();
     }
-    public boolean isSpecialCharacterWarningMessageDisplayed(){
-        return location_warning_msg.getText().contains("Geographic Level name can't start with empty space and can't containt uppercase characters or special letters.");
+    public boolean isSpecialCharacterWarningMessageDisplayed(String msg){
+        return location_warning_msg.getText().contains(msg);
     }
     public boolean isGeoLocationCreated(){
         return location_created_toast.getText().contains("Geographic Location created successfully with id: ");

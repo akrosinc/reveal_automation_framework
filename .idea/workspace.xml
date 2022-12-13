@@ -5,51 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa20c4e5-86be-45f2-a8f0-449935c10242" name="Changes" comment="maintaining tests">
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-02-24-110229.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-05-23-020541.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-08-23-040800.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-09-23-040911.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-11-27-111154.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-17-28-091723.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-19-23-031939.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-19-24-101941.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-19-25-031926.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-19-28-091906.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-21-24-102154.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-22-24-102245.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-23-23-032304.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-23-24-102326.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-23-25-042323.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-24-25-032416.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-25-23-032533.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-28-25-032825.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-35-23-043535.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-35-25-043545.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-39-23-033916.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-40-23-034035.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-41-25-044147.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-44-24-104400.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-45-24-104514.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-46-23-034643.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-46-24-104634.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-47-24-104714.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-50-24-105055.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-52-25-045214.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-54-25-045426.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-56-25-045604.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/LocationManagementPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/LocationManagementPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/PlanPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/PlanPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/BaseClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LocationManagementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LocationManagementTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PlanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlanTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExtentReport/ListenerClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExtentReport/ListenerClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/PlanPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjects/PlanPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/BaseClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Constants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/LogInPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LogInPageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-29-20-042944.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-00-24-110008.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-31-20-043101.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-01-24-110137.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-29-20-042944.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-31-20-043101.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,12 +88,12 @@
       <recent name="C:\Users\yntlokwana\IdeaProjects\Reveal_AutomationFramework\src" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.PlanTest.assignmentTeamToLocationTest">
-    <configuration name="PlanTest.assignmentTeamToLocationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.LocationManagementTest.CreateGeographicLevel_WithEmptyTitleTest">
+    <configuration name="LocationManagementTest.CreateGeographicLevelTitleWith_SpecialCharactersTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Reveal_Automation_Framework" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PlanTest" />
-      <option name="METHOD_NAME" value="assignmentTeamToLocationTest" />
+      <option name="MAIN_CLASS_NAME" value="LocationManagementTest" />
+      <option name="METHOD_NAME" value="CreateGeographicLevelTitleWith_SpecialCharactersTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -138,11 +101,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlanTest.createPlanTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LocationManagementTest.CreateGeographicLevel_WithEmptyTitleTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Reveal_Automation_Framework" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LocationManagementTest" />
+      <option name="METHOD_NAME" value="CreateGeographicLevel_WithEmptyTitleTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlanTest.assignmentTeamToLocationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Reveal_Automation_Framework" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PlanTest" />
-      <option name="METHOD_NAME" value="createPlanTest" />
+      <option name="METHOD_NAME" value="assignmentTeamToLocationTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -162,23 +137,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlanTest.planLocationAssignmentTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PlanTest.planDurationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Reveal_Automation_Framework" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PlanTest" />
-      <option name="METHOD_NAME" value="planLocationAssignmentTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PlanTest.updatePlanTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Reveal_Automation_Framework" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PlanTest" />
-      <option name="METHOD_NAME" value="updatePlanTest" />
+      <option name="METHOD_NAME" value="planDurationTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -188,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LocationManagementTest.CreateGeographicLevel_WithEmptyTitleTest" />
+        <item itemvalue="TestNG.LocationManagementTest.CreateGeographicLevelTitleWith_SpecialCharactersTest" />
+        <item itemvalue="TestNG.PlanTest.planDurationTest" />
         <item itemvalue="TestNG.PlanTest.assignmentTeamToLocationTest" />
         <item itemvalue="TestNG.PlanTest.createPlanTest" />
-        <item itemvalue="TestNG.PlanTest.createPlanTest (1)" />
-        <item itemvalue="TestNG.PlanTest.planLocationAssignmentTest" />
-        <item itemvalue="TestNG.PlanTest.updatePlanTest" />
       </list>
     </recent_temporary>
   </component>
@@ -464,7 +427,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669201392112</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="maintaining tests">
+      <created>1669626771528</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1669626771528</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -556,7 +526,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/LocationManagementTest.java</url>
-          <line>64</line>
+          <line>89</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -576,17 +546,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/LocationManagementTest.java</url>
-          <line>76</line>
+          <line>101</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/LocationManagementTest.java</url>
-          <line>50</line>
+          <line>75</line>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/LocationManagementTest.java</url>
-          <line>88</line>
+          <line>113</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -673,6 +643,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/PageObjects/PlanPage.java</url>
           <line>204</line>
           <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PlanTest.java</url>
+          <line>180</line>
+          <option name="timeStamp" value="75" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

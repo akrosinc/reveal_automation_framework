@@ -43,7 +43,32 @@ public class LocationManagementTest extends BaseClass {
         page.clickMainCreateBtn();
         page.enterGeographicLevelDetails("test@%j","Country");
         page.clickFormCreateBtn();
-        Assert.assertTrue(page.isSpecialCharacterWarningMessageDisplayed(), "warning for entering special characters not displayed");
+        Assert.assertTrue(page.isSpecialCharacterWarningMessageDisplayed("Geographic Level name can't start with empty space and can't containt uppercase characters or special letters."), "warning for entering special characters not displayed");
+    }
+    @Test()//Create Geo location with title with special characters
+    public void CreateGeographicLevelTitleWith_SpecialCharactersTest() throws Throwable {
+        SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
+        LocationManagementPage page = PageFactory.initElements(getDriver(), LocationManagementPage.class);
+        login.clickLogInBtn();
+        login.signIn(Constants.username,Constants.password);
+        page.clickLocationManagementBtn();
+        page.clickMainCreateBtn();
+        page.enterGeographicLevelDetails("testing","Country@!");
+        page.clickFormCreateBtn();
+        Assert.assertTrue(page.isSpecialCharacterWarningMessageDisplayed("Geographic Level title can't start with empty space or special letters."), "warning for entering special characters not displayed");
+    }
+    @Test()//Create Geo location with title with empty characters
+    public void CreateGeographicLevel_WithEmptyTitleTest() throws Throwable {
+        SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
+        LocationManagementPage page = PageFactory.initElements(getDriver(), LocationManagementPage.class);
+        login.clickLogInBtn();
+        login.signIn(Constants.username,Constants.password);
+        page.clickLocationManagementBtn();
+        page.clickMainCreateBtn();
+        page.enterGeographicLevelDetails("testing","");
+        page.clickFormCreateBtn();
+        Assert.assertTrue(page.isSpecialCharacterWarningMessageDisplayed("Geographic Level title must not be empty."),
+                "warning for empty title not displayed");
     }
     @Test()//Create Geo location with name with uppercase characters
     public void CreateGeographicLevelNameWith_UppercaseCharactersTest() throws Throwable {
@@ -55,7 +80,7 @@ public class LocationManagementTest extends BaseClass {
         page.clickMainCreateBtn();
         page.enterGeographicLevelDetails("Testing","Country");
         page.clickFormCreateBtn();
-        Assert.assertTrue(page.isSpecialCharacterWarningMessageDisplayed(), "warning for entering special characters not displayed");
+        Assert.assertTrue(page.isSpecialCharacterWarningMessageDisplayed("Geographic Level name can't start with empty space and can't containt uppercase characters or special letters."), "warning for entering special characters not displayed");
     }
     @Test()//create geo location with empty name and title.
     public void CreateGeographicLevelWithEmpty_nameAndTitleTest() throws Throwable {

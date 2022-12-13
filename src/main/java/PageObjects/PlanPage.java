@@ -341,6 +341,13 @@ public class PlanPage extends BaseClass {
     public void editPlanTitle(String title) throws Throwable{
         action.type(plan_title_input,title);
     }
+    public void updatePlanDate() throws Throwable{
+        start_date_picker.clear();
+        action.type(start_date_picker,getCurrentDate());
+        getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        end_date_picker.clear();
+        action.type(end_date_picker,getCurrentDate());
+    }
     public void clickPlanUpdateBtn(){
         action.JSClick(getDriver(),update_details_btn);
     }

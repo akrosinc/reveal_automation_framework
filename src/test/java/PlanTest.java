@@ -170,6 +170,19 @@ public class PlanTest extends BaseClass {
         plan.editPlanTitle(plan_name);
 
     }
+    @Test()//update plan date
+    public void planDurationTest() throws Throwable {
+        PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
+        SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
+        login.clickLogInBtn();
+        login.signIn(Constants.username,Constants.password);
+        plan.clickPlanManagementBtn();
+        plan.openPlan();
+        plan.updatePlanDate();
+        plan.clickPlanUpdateBtn();
+        Assert.assertTrue(plan.isPlanUpdated("Plan activated successfully"),"plan not successfully created");
+
+    }
     @Test()//Activate plan
     public void activatePlanTest() throws Throwable {
         PlanPage plan = PageFactory.initElements(getDriver(), PlanPage.class);
