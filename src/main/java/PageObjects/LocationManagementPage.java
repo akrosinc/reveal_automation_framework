@@ -30,7 +30,7 @@ public class LocationManagementPage extends BaseClass{
     WebElement geography_levels_select;
     @FindBy(how = How.XPATH, using ="//*[@id=\"location-tabs-tabpane-geographic-levels\"]/div[2]/table")
     WebElement locationTable;
-    @FindBy(how = How.XPATH, using ="//form/div[3]/button[1]")
+    @FindBy(how = How.XPATH, using ="//body/div[5]/div[1]/div[1]/div[2]/form[1]/div[4]/button[1]")
     WebElement location_submit_create;
     @FindBy(how = How.XPATH, using ="//*[text()='default']")
     WebElement default_location_hierarchy_name;
@@ -46,6 +46,10 @@ public class LocationManagementPage extends BaseClass{
     WebElement location_updated_toast;
     @FindBy(how = How.XPATH, using ="//*[contains(text(),'Geographic location deleted successfully ')]")
     WebElement location_deleted_toast;
+    @FindBy(how = How.XPATH, using ="//*[contains(text(),'Deleted successfully!')]")
+    WebElement location_hierarchy_deleted_toast;
+    @FindBy(how = How.XPATH, using ="//*[contains(text(),'Successfully created location hierarchy with id:')]")
+    WebElement location_hierarchy_created_toast;
     @FindBy(how = How.XPATH, using ="//*[text()='testing']")
     WebElement location_name_created;
     @FindBy(how = How.XPATH, using ="//*[text()='edited']")
@@ -56,12 +60,15 @@ public class LocationManagementPage extends BaseClass{
     WebElement location_delete_btn;
     @FindBy(how = How.XPATH, using ="//div[3]/button[2]")
     WebElement location_confirm_delete;
+    @FindBy(how = How.XPATH, using ="//p[contains(text(),'No content.')]")
+    WebElement no_content;
     @FindBy(how = How.ID, using ="save-button")
     WebElement location_save_btn;
     @FindBy(how = How.ID, using ="location-tabs-tab-location-hierarchy")
     WebElement location_tab_location_hierarchy;
     public  void clickLocationManagementBtn(){
         action.JSClick(getDriver(),locations_management_btn);
+        getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
     public  void clickMainCreateBtn(){
         action.click(getDriver(),location_create_btn);
@@ -70,7 +77,19 @@ public class LocationManagementPage extends BaseClass{
         action.click(getDriver(),location_tab_location_hierarchy);
     }
     public  void clickDeleteBtn(){
-        action.click(getDriver(),location_delete_btn);
+        boolean content = false;
+        try {
+            content = no_content.isDisplayed();
+        }catch (NotFoundException e){}
+
+        if (content){
+            createGeographicHierarchy();
+            action.explicitWait(getDriver(),location_delete_btn,30);
+            action.JSClick(getDriver(), location_delete_btn);
+
+        }else {
+            action.JSClick(getDriver(), location_delete_btn);
+        }
     }
     public  void confirmDelete(){
         action.click(getDriver(),location_confirm_delete);
@@ -94,21 +113,48 @@ public class LocationManagementPage extends BaseClass{
         action.click(getDriver(),location_save_btn);
     }
     public void createGeographicHierarchy(){
-       try {
-           boolean name = action.findElement(getDriver(), default_location_hierarchy_name);
-           if (!name) {
-               action.click(getDriver(), location_create_btn);
-               action.type(location_name_input, "testing");
-               action.SelectDropDown(geography_levels_select);
-               clickFormCreateBtn();
-           }
-       }catch (NotFoundException e){}
+        boolean content = false;
+        try {
+            content = no_content.isDisplayed();
+        }catch (NotFoundException e){}
+
+        if(content){
+            action.click(getDriver(), location_create_btn);
+            action.type(location_name_input, "testing");
+            action.SelectDropDown(geography_levels_select);
+            clickFormCreateBtn();
+        }else {
+            action.JSClick(getDriver(), location_delete_btn);
+            confirmDelete();
+            action.explicitWait(getDriver(),no_content,20);
+            action.click(getDriver(), location_create_btn);
+            action.type(location_name_input, "testing");
+            action.SelectDropDown(geography_levels_select);
+            clickFormCreateBtn();
+        }
     }
+    /*public void createGeographicHierarchy(){
+        try {
+            boolean name = action.findElement(getDriver(), default_location_hierarchy_name);
+            if (!name) {
+                action.click(getDriver(), location_create_btn);
+                action.type(location_name_input, "testing");
+                action.SelectDropDown(geography_levels_select);
+                clickFormCreateBtn();
+            }
+        }catch (NotFoundException e){}
+    }*/
     public boolean isLocationManagementAccessible(){
         return locationTable.isDisplayed();
     }
     public boolean isLocationHierarchyNameDisplayed(){
         return default_location_hierarchy_name.isDisplayed();
+    }
+    public boolean isCreatedLocationHierarchyToastDisplayed(){
+        return location_hierarchy_created_toast.isDisplayed();
+    }
+    public boolean isDeletedLocationHierarchyToastDisplayed(){
+        return location_hierarchy_deleted_toast.isDisplayed();
     }
     public boolean isSpecialCharacterWarningMessageDisplayed(String msg){
         return location_warning_msg.getText().contains(msg);

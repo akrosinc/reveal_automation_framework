@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa20c4e5-86be-45f2-a8f0-449935c10242" name="Changes" comment="maintaining tests">
+    <list default="true" id="fa20c4e5-86be-45f2-a8f0-449935c10242" name="Changes" comment="change env form kenya to qa">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/LocationManagementPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/LocationManagementPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/PlanPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/PlanPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LocationManagementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LocationManagementTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PlanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlanTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-29-20-042944.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-31-20-043101.html" beforeDir="false" />
     </list>
@@ -88,7 +85,7 @@
       <recent name="C:\Users\yntlokwana\IdeaProjects\Reveal_AutomationFramework\src" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LocationManagementTest.CreateGeographicLevel_WithEmptyTitleTest">
+  <component name="RunManager" selected="TestNG.LocationManagementTest.createLocationHierarchyTest">
     <configuration name="LocationManagementTest.CreateGeographicLevelTitleWith_SpecialCharactersTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Reveal_Automation_Framework" />
       <option name="PACKAGE_NAME" value="" />
@@ -113,11 +110,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlanTest.assignmentTeamToLocationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LocationManagementTest.createLocationHierarchyTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Reveal_Automation_Framework" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PlanTest" />
-      <option name="METHOD_NAME" value="assignmentTeamToLocationTest" />
+      <option name="MAIN_CLASS_NAME" value="LocationManagementTest" />
+      <option name="METHOD_NAME" value="createLocationHierarchyTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -125,11 +122,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlanTest.createPlanTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LocationManagementTest.deleteLocationHierarchyTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Reveal_Automation_Framework" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PlanTest" />
-      <option name="METHOD_NAME" value="createPlanTest" />
+      <option name="MAIN_CLASS_NAME" value="LocationManagementTest" />
+      <option name="METHOD_NAME" value="deleteLocationHierarchyTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -151,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LocationManagementTest.createLocationHierarchyTest" />
+        <item itemvalue="TestNG.LocationManagementTest.deleteLocationHierarchyTest" />
         <item itemvalue="TestNG.LocationManagementTest.CreateGeographicLevel_WithEmptyTitleTest" />
         <item itemvalue="TestNG.LocationManagementTest.CreateGeographicLevelTitleWith_SpecialCharactersTest" />
         <item itemvalue="TestNG.PlanTest.planDurationTest" />
-        <item itemvalue="TestNG.PlanTest.assignmentTeamToLocationTest" />
-        <item itemvalue="TestNG.PlanTest.createPlanTest" />
       </list>
     </recent_temporary>
   </component>
@@ -434,7 +431,28 @@
       <option name="project" value="LOCAL" />
       <updated>1669626771528</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="andding location tests">
+      <created>1670906160698</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1670906160698</updated>
+    </task>
+    <task id="LOCAL-00040" summary="andding location tests">
+      <created>1670906210051</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1670906210051</updated>
+    </task>
+    <task id="LOCAL-00041" summary="change env form kenya to qa">
+      <created>1670906274386</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1670906274386</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -464,7 +482,9 @@
     <MESSAGE value="fixing dependency on pom.xml." />
     <MESSAGE value="fixing test classes ending with s." />
     <MESSAGE value="maintaining tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="maintaining tests" />
+    <MESSAGE value="andding location tests" />
+    <MESSAGE value="change env form kenya to qa" />
+    <option name="LAST_COMMIT_MESSAGE" value="change env form kenya to qa" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -648,6 +668,16 @@
           <url>file://$PROJECT_DIR$/src/test/java/PlanTest.java</url>
           <line>180</line>
           <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/LocationManagementTest.java</url>
+          <line>130</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/LocationManagementTest.java</url>
+          <line>141</line>
+          <option name="timeStamp" value="79" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

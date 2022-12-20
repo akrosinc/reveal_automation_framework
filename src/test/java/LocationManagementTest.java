@@ -129,8 +129,18 @@ public class LocationManagementTest extends BaseClass {
         page.clickLocationManagementBtn();
         page.clickLocationHierarchyTab();
         page.createGeographicHierarchy();
-        Assert.assertTrue(page.isLocationHierarchyNameDisplayed(), "Geographic location hierarchy not successfully created");
+        Assert.assertTrue(page.isCreatedLocationHierarchyToastDisplayed(), "Geographic location hierarchy not successfully created");
+    }
+    @Test()   //Delete location hierarchy
+    public void deleteLocationHierarchyTest() throws Throwable {
+        SignInPage login = PageFactory.initElements(getDriver(), SignInPage.class);
+        LocationManagementPage page = PageFactory.initElements(getDriver(), LocationManagementPage.class);
+        login.clickLogInBtn();
+        login.signIn(Constants.username,Constants.password);
+        page.clickLocationManagementBtn();
+        page.clickLocationHierarchyTab();
         page.clickDeleteBtn();
         page.confirmDelete();
+        Assert.assertTrue(page.isDeletedLocationHierarchyToastDisplayed(), "Geographic location hierarchy not successfully deleted");
     }
 }
