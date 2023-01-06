@@ -44,7 +44,7 @@ public interface ActionInterface {
     public void explicitWait(WebDriver driver, WebElement element, int timeOut);
     public void pageLoadTimeOut(WebDriver driver, int timeOut);
     public String screenShot(WebDriver driver, String filename);
-    public String getCurrentTime();
+    public String getCurrentDateTime();
 
 }
 

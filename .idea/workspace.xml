@@ -4,12 +4,104 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa20c4e5-86be-45f2-a8f0-449935c10242" name="Changes" comment="change env form kenya to qa">
+    <list default="true" id="fa20c4e5-86be-45f2-a8f0-449935c10242" name="Changes" comment="adding changes in location hierarchy">
+      <change afterPath="$PROJECT_DIR$/files/Users.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/UsersWithoutOrg.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-00-05-100007.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-01-05-100104.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-01-05-100150.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-02-05-100233.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-02-05-100236.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-02-05-100240.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-03-05-100322.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-03-05-100331.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-04-05-100415.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-04-05-100458.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-05-05-100511.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-05-05-100525.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-06-05-100632.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-07-05-100717.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-07-05-100730.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-07-05-100742.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-08-05-100843.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-08-05-100847.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-09-05-100932.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-09-05-100936.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-10-05-101020.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-11-05-101103.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-11-05-101117.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-11-05-101120.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-12-05-101204.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-12-05-101207.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-12-05-101250.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-13-05-101333.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-14-03-121450.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-14-05-101416.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-14-05-101439.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-15-03-121547.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-15-05-101505.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-15-05-101511.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-15-05-101554.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-16-03-121648.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-16-05-101605.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-16-05-101648.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-16-05-101651.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-17-05-101734.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-17-05-101739.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-17-05-101744.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-18-03-121807.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-19-03-121906.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-20-03-122013.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-21-03-122118.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-21-03-122132.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-21-03-122150.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-21-06-092137.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-22-03-122205.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-22-03-122222.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-22-03-122239.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-22-03-122251.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-23-03-122301.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-23-03-122315.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-24-03-122421.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-24-03-122429.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-24-03-122445.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-25-03-122502.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-25-03-122538.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-25-03-122553.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-26-03-122616.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-26-03-122638.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-27-03-122700.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-27-03-122712.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-27-03-122738.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-28-03-122806.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-28-03-122837.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-28-03-122849.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-28-03-122859.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-29-03-122907.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-29-03-122915.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-37-04-023716.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-38-05-113827.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-40-04-024056.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-57-05-095747.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-58-05-095835.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-59-05-095921.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/LocationManagementPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/LocationManagementPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LocationManagementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LocationManagementTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-29-20-042944.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2022-31-20-043101.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ActionDriver/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ActionDriver/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ActionDriver/ActionInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ActionDriver/ActionInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ExtentReport/ExtentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExtentReport/ExtentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/UserPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/UserPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PlanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ActionDriver/Action.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ActionDriver/Action.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ActionDriver/ActionInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ActionDriver/ActionInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExtentReport/ExtentManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExtentReport/ExtentManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/LocationManagementPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjects/LocationManagementPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/UserPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjects/UserPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/BaseClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Constants.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +159,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/yntlokwana/IdeaProjects/reveal_automation_framework/files&quot;,
     &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.097751714&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.29144096&quot;,
@@ -77,27 +170,18 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ActionDriver" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\yntlokwana\IdeaProjects\reveal_automation_framework\files" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yntlokwana\IdeaProjects\reveal_automation_framework\files" />
       <recent name="C:\Users\yntlokwana\IdeaProjects\reveal_automation_framework" />
       <recent name="C:\Users\yntlokwana\IdeaProjects\Reveal_AutomationFramework" />
       <recent name="C:\Users\yntlokwana\IdeaProjects\Reveal_AutomationFramework\src\main\java" />
       <recent name="C:\Users\yntlokwana\IdeaProjects\Reveal_AutomationFramework\src\main" />
-      <recent name="C:\Users\yntlokwana\IdeaProjects\Reveal_AutomationFramework\src" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LocationManagementTest.createLocationHierarchyTest">
-    <configuration name="LocationManagementTest.CreateGeographicLevelTitleWith_SpecialCharactersTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Reveal_Automation_Framework" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LocationManagementTest" />
-      <option name="METHOD_NAME" value="CreateGeographicLevelTitleWith_SpecialCharactersTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.UserTest.DownloadSecurityGroupTemplateTest">
     <configuration name="LocationManagementTest.CreateGeographicLevel_WithEmptyTitleTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Reveal_Automation_Framework" />
       <option name="PACKAGE_NAME" value="" />
@@ -134,11 +218,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlanTest.planDurationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.DownloadSecurityGroupTemplateTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Reveal_Automation_Framework" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PlanTest" />
-      <option name="METHOD_NAME" value="planDurationTest" />
+      <option name="MAIN_CLASS_NAME" value="UserTest" />
+      <option name="METHOD_NAME" value="DownloadSecurityGroupTemplateTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.UploadBulkUsersTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Reveal_Automation_Framework" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UserTest" />
+      <option name="METHOD_NAME" value="UploadBulkUsersTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -148,11 +244,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.UserTest.DownloadSecurityGroupTemplateTest" />
+        <item itemvalue="TestNG.UserTest.UploadBulkUsersTest" />
         <item itemvalue="TestNG.LocationManagementTest.createLocationHierarchyTest" />
         <item itemvalue="TestNG.LocationManagementTest.deleteLocationHierarchyTest" />
         <item itemvalue="TestNG.LocationManagementTest.CreateGeographicLevel_WithEmptyTitleTest" />
-        <item itemvalue="TestNG.LocationManagementTest.CreateGeographicLevelTitleWith_SpecialCharactersTest" />
-        <item itemvalue="TestNG.PlanTest.planDurationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -452,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670906274386</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="adding changes in location hierarchy">
+      <created>1671534298331</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1671534298331</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -484,7 +587,8 @@
     <MESSAGE value="maintaining tests" />
     <MESSAGE value="andding location tests" />
     <MESSAGE value="change env form kenya to qa" />
-    <option name="LAST_COMMIT_MESSAGE" value="change env form kenya to qa" />
+    <MESSAGE value="adding changes in location hierarchy" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding changes in location hierarchy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -506,22 +610,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserTest.java</url>
-          <line>40</line>
+          <line>51</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserTest.java</url>
-          <line>37</line>
+          <line>48</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserTest.java</url>
-          <line>63</line>
+          <line>72</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserTest.java</url>
-          <line>62</line>
+          <line>71</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -540,24 +644,9 @@
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/UserTest.java</url>
-          <line>137</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/LocationManagementTest.java</url>
           <line>89</line>
           <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/UserTest.java</url>
-          <line>151</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/UserTest.java</url>
-          <line>150</line>
-          <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/PageObjects/PlanPage.java</url>
@@ -586,27 +675,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserTest.java</url>
-          <line>125</line>
+          <line>134</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserTest.java</url>
-          <line>89</line>
+          <line>98</line>
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserTest.java</url>
-          <line>102</line>
+          <line>111</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserTest.java</url>
-          <line>74</line>
+          <line>83</line>
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserTest.java</url>
-          <line>76</line>
+          <line>85</line>
           <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -678,6 +767,31 @@
           <url>file://$PROJECT_DIR$/src/test/java/LocationManagementTest.java</url>
           <line>141</line>
           <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/UserTest.java</url>
+          <line>150</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/UserTest.java</url>
+          <line>215</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/PageObjects/UserPage.java</url>
+          <line>185</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/PageObjects/UserPage.java</url>
+          <line>226</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/PageObjects/UserPage.java</url>
+          <line>235</line>
+          <option name="timeStamp" value="85" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

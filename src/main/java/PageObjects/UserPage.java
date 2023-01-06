@@ -7,8 +7,12 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+import java.io.File;
+import java.io.IOException;
+import java.time.Instant;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
 import static java.lang.System.in;
@@ -85,9 +89,26 @@ public class UserPage extends BaseClass{
     WebElement user_updated_toast;
     @FindBy(how = How.ID, using ="submit-button")
     WebElement user_submit_btn;
+    @FindBy(how = How.ID, using ="management-tab-tab-user-import")
+    WebElement user_import_tab;
+    @FindBy(how = How.ID, using ="import-button")
+    WebElement bulk_import_btn;
+    @FindBy(how = How.ID, using ="csv-input")
+    WebElement upload_import_input;
+    @FindBy(how = How.ID, using ="submit-button")
+    WebElement submit_import_user_btn;
+    @FindBy(how = How.XPATH, using ="//a[contains(text(),'here')]")
+    WebElement download_sample_link;
+    @FindBy(how = How.XPATH, using ="//button[@id='download-security-groups-button']")
+    WebElement download_security_groups_btn;
+    @FindBy(how = How.XPATH, using ="//tbody/tr/td[3]")
+    WebElement uploaded_file_status;
+    @FindBy(how = How.XPATH, using ="//*[@id=\'management-tab-tabpane-user-import\']/div[2]/table/tbody/tr[2]/td[2]")
+    WebElement users_uploaded_time;
     public UserPage(WebDriver driver){
         this.driver = driver;
     }
+
     public void clickCreateOrganizationBtn(){
         getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         action.JSClick(getDriver(),organization_create_btn);
@@ -102,10 +123,15 @@ public class UserPage extends BaseClass{
     public void enterOrganisationDetails(String org_name){
         action.type(organization_name_input,org_name);
         action.SelectDropDown(organization_type);
-       // action.SelectDropDown(organization_part_of_select);
         action.click(getDriver(),organization_save_btn);
     }
     public void enterChildOrganisationDetails(String org_name){
+        action.type(organization_name_input,org_name);
+        action.SelectDropDown(organization_type);
+        action.SelectDropDown(organization_part_of_select);
+        action.click(getDriver(),organization_save_btn);
+    }
+    public void enterChildOfChildOrganisationDetails(String org_name){
         action.type(organization_name_input,org_name);
         action.SelectDropDown(organization_type);
         action.SelectDropDown(organization_part_of_select);
@@ -135,6 +161,85 @@ public class UserPage extends BaseClass{
         action.type(last_name_input,lname);
         action.type(password_input, Constants.password);
         action.JSClick(getDriver(),organization_save_btn);
+    }
+    public void clickUserImportTab(){
+        action.click(getDriver(),user_import_tab);
+    }
+    public void clickBulkImportBtn(){
+        action.click(getDriver(),bulk_import_btn);
+    }
+    public void uploadUsers(String fileName){
+        File file = new File(System.getProperty("user.dir")+"/files/"+fileName);
+        action.click(getDriver(),bulk_import_btn);
+        upload_import_input.sendKeys(file.toString());
+        action.JSClick(getDriver(),submit_import_user_btn);
+    }
+    public void downloadUsersTemplate(){
+        action.click(getDriver(),download_sample_link);
+    }
+    public void downloadSecurityGroupTemplate(){
+        action.click(getDriver(),download_security_groups_btn);
+    }
+    public  boolean isFileDownloaded(String expectedFileName, String fileExtension, int timeOut) throws IOException
+    {
+        // Download Folder Path
+        String folderName = System.getProperty("user.home") + File.separator + "Downloads";
+
+
+        // Array to Store List of Files in Directory
+        File[] listOfFiles;
+
+        // Store File Name
+        String fileName;
+
+        //  Consider file is not downloaded
+        boolean fileDownloaded = false;
+
+        // capture time before looking for files in directory
+        // last modified time of previous files will always less than start time
+        // this is basically to ignore previous downloaded files
+        long startTime = Instant.now().toEpochMilli();
+
+        // Time to wait for download to finish
+        long waitTime = startTime + timeOut;
+
+        // while current time is less than wait time
+        while (startTime < waitTime)
+        {
+            // get all the files of the folder
+            listOfFiles = new File(folderName).listFiles();
+
+            //long lastMod = Long.MIN_VALUE;
+
+            // iterate through each file
+            for (File file : listOfFiles)
+            {
+                // get the name of the current file
+                fileName = file.getName().toLowerCase();
+
+                // condition 1 - Last Modified Time > Start Time
+                // condition 2 - till the time file is completely downloaded extension will be crdownload
+                // Condition 3 - Current File name contains expected Text
+                // Condition 4 - Current File name contains expected extension
+                if (file.lastModified() >= startTime && !fileName.contains("CRDOWNLOAD") &&   fileName.contains(expectedFileName) && fileName.contains(fileExtension.toLowerCase()))
+                {
+                    // File Found
+                    fileDownloaded = true;
+                    break;
+                }
+            }
+            // File Found Break While Loop
+            if (fileDownloaded)
+                break;
+        }
+        // File Not Found
+        return fileDownloaded;
+    }
+    public boolean isFileUploadedNow(){
+        return users_uploaded_time.getText().equalsIgnoreCase("COMPLETE");
+    }
+    public boolean isUploadedStatusCompleted(){
+        return uploaded_file_status.getText() == getCurrentTime1();
     }
     public void toggleInactive(){
         action.click(getDriver(),active_organization_switch);

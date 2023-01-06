@@ -153,7 +153,7 @@ public class PlanTest extends BaseClass {
         plan.clickPlanManagementBtn();
         plan.openPlan();
         plan.updatePlanDetails(plan_name);
-        Assert.assertTrue(plan.isPlanUpdated("Plan updated successfully."),"plan not successfully updated");;
+        Assert.assertTrue(plan.isPlanUpdated("Plan updated successfully."),"plan not successfully updated");
     }
     @Test()//update plan tile
     public void updatePlanTitleTest() throws Throwable {

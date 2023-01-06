@@ -756,8 +756,8 @@ public  class Action extends BaseClass implements ActionInterface {
         //return newImageString;
         return destination;
     }
-    @Override
-    public String getCurrentTime() {
+
+    public String getCurrentDateTime() {
         String currentDate = new SimpleDateFormat("yyyy-MM-dd-hhmmss").format(new Date());
         return currentDate;
     }

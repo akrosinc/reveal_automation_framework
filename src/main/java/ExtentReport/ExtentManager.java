@@ -24,7 +24,7 @@ public class ExtentManager {
     @BeforeMethod
     public static void setExtent()  {
 
-        spark= new ExtentSparkReporter(System.getProperty("user.dir")+"/test-output/ExtentReport/"+"MyReport_"+getCurrentTime1()+".html");
+        spark= new ExtentSparkReporter(System.getProperty("user.dir")+"/test-output/ExtentReport/"+"MyReport_"+getCurrentTime()+".html");
         //spark.loadXMLConfig(System.getProperty("user.dir")+"/extent-config.xml");
         spark.config().setDocumentTitle("Web Automation Test Report");
         spark.config().setReportName("Reveal Test Automation Report");

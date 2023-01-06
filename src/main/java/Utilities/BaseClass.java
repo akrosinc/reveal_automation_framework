@@ -87,8 +87,12 @@ public class BaseClass  {
         ExtentManager.endReport();
         getDriver().quit();
     }
-    public static String getCurrentTime1(){
+    public static String getCurrentTime(){
             String currentDate  = new SimpleDateFormat("yyyy-mm-dd-hhmmss").format(new Date());
             return  currentDate;
+    }
+    public static String getCurrentTime1(){
+        String currentDate  = new SimpleDateFormat("Mth d, yyyy HH:MM tt").format(new Date());
+        return  currentDate;
     }
 }
