@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa20c4e5-86be-45f2-a8f0-449935c10242" name="Changes" comment="adding changes in location hierarchy">
-      <change afterPath="$PROJECT_DIR$/files/Users.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/UsersWithoutOrg.csv" afterDir="false" />
+    <list default="true" id="fa20c4e5-86be-45f2-a8f0-449935c10242" name="Changes" comment="wip">
+      <change afterPath="$PROJECT_DIR$/files/UsersWithSpecialChar.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-00-05-100007.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-01-05-100104.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-01-05-100150.html" afterDir="false" />
@@ -87,20 +86,7 @@
       <change afterPath="$PROJECT_DIR$/test-output/ExtentReport/MyReport_2023-59-05-095921.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ActionDriver/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ActionDriver/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ActionDriver/ActionInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ActionDriver/ActionInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ExtentReport/ExtentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExtentReport/ExtentManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/UserPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/UserPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/BaseClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PlanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlanTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ActionDriver/Action.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ActionDriver/Action.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ActionDriver/ActionInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ActionDriver/ActionInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExtentReport/ExtentManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExtentReport/ExtentManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/LocationManagementPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjects/LocationManagementPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/UserPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjects/UserPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/BaseClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Constants.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -555,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671534298331</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="wip">
+      <created>1673018290231</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1673018290231</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -573,7 +566,6 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="remove unwanted module" />
     <MESSAGE value="editing maven.yml and pom.xml" />
-    <MESSAGE value="wip" />
     <MESSAGE value="fixing extent report" />
     <MESSAGE value="andding maven surefire plugin" />
     <MESSAGE value="fixing maven surefire plugin" />
@@ -588,7 +580,8 @@
     <MESSAGE value="andding location tests" />
     <MESSAGE value="change env form kenya to qa" />
     <MESSAGE value="adding changes in location hierarchy" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding changes in location hierarchy" />
+    <MESSAGE value="wip" />
+    <option name="LAST_COMMIT_MESSAGE" value="wip" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
